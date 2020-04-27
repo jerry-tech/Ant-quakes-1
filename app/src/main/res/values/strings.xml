@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Ant</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="manage_all_your_customer_support">Manage all your customer support</string>
+    <string name="forgot_password_recover_below">Forgot Password ? Recover Below</string>
+    <string name="login">Login</string>
+    <string name="logo">logo</string>
+    <string name="antquakes">Antquakes</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="username">Username</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="terms_of_use">By using this app, you agree to <u>Terms of Use</u> and <u>Privacy Policy</u></string>
+    <string name="register">Register</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="_234">+234</string>
 </resources>

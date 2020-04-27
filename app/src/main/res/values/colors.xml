@@ -4,6 +4,7 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="signUp">#3a2c23</color>
+    <color name="regInput">#55443B</color>
     <color name="textColor">#DCD7F5</color>
     <color name="background_main">#fff</color>
 </resources>
