@@ -23,7 +23,8 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="match_parent"
+                android:layout_width="250dp"
+                android:layout_gravity="center_horizontal"
                 android:layout_height="220dp"
                 android:src="@drawable/ant"
                 android:contentDescription="@string/logo" />

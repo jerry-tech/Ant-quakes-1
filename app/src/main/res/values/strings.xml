@@ -16,4 +16,8 @@
     <string name="register">Register</string>
     <string name="phone_number">Phone Number</string>
     <string name="_234">+234</string>
+    <string name="confirm">Confirm</string>
+    <string name="copyright_2020_all_rights_reserved">Copyright © 2020 All rights reserved.</string>
+    <string name="enter_otp_code">Enter OTP Code</string>
+    <string name="otp_code">OTP CODE</string>
 </resources>
