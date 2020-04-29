@@ -11,9 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".authOtp" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+        <activity android:name=".AuthOtp" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
         <activity
-            android:name=".registration"
+            android:name=".Registration"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".MainActivity"

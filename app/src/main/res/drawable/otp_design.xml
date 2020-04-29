@@ -3,18 +3,18 @@
     android:shape="rectangle" >
 
     <corners
-        android:bottomLeftRadius="0dp"
-        android:bottomRightRadius="0dp"
-        android:radius="90dp"
+        android:bottomLeftRadius="100dp"
+        android:bottomRightRadius="100dp"
+        android:radius="10dp"
         android:topLeftRadius="0dp"
         android:topRightRadius="0dp" />
 
-    <solid android:color="@color/signUp" />
-
+    <solid android:color="@color/background_main"/>
     <padding
         android:bottom="0dp"
         android:left="0dp"
         android:right="0dp"
         android:top="0dp" />
+
 
 </shape>

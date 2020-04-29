@@ -10,8 +10,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.android.volley.Request;
+
 import com.android.volley.toolbox.StringRequest;
 import com.google.android.material.textfield.TextInputEditText;
 
@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
 
 	//Moving to the registeration page.
 	public void nextRegister(View view) {
-		Intent intent = new Intent(this, registration.class);
+		Intent intent = new Intent(this, Registration.class);
 		startActivity(intent);
 
 		overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
