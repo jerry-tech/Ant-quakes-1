@@ -1,7 +1,5 @@
 package com.accounting.ant;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.android.volley.Request;
 import com.android.volley.toolbox.StringRequest;
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
 	ProgressDialog progressDialog;
 	TextInputEditText username, password;
-	Button loginBtn;
+	Button loginBtn,forgotPass;
 
 	TextView footerTime;
 
@@ -59,7 +59,18 @@ public class MainActivity extends AppCompatActivity {
 			//Implementing the login method
 			loginUser(username.getText().toString(),password.getText().toString());
 		});
+
+		//action listener for forgotPass
+		forgotPass = findViewById(R.id.btnForgot);
+		forgotPass.setOnClickListener(v -> btnForgotPass());
 	}
+
+	//Intent for forgot password
+	public void btnForgotPass(){
+		Intent intent = new Intent(this,ForgotPassword.class);
+		startActivity(intent);
+	}
+
 
 	//Logic for login button.
 	private void loginUser(final String username, final String password) {
@@ -121,7 +132,7 @@ public class MainActivity extends AppCompatActivity {
 
 	//Moving to the registeration page.
 	public void nextRegister(View view) {
-		Intent intent = new Intent(this, registration.class);
+		Intent intent = new Intent(this, Registration.class);
 		startActivity(intent);
 
 		overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);

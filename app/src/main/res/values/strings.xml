@@ -20,4 +20,6 @@
     <string name="copyright_2020_all_rights_reserved">Copyright © 2020 All rights reserved.</string>
     <string name="enter_otp_code">Enter OTP Code</string>
     <string name="otp_code">OTP CODE</string>
+    <string name="_29_sec"><u>29</u> sec</string>
+    <string name="otp_auto_resend_in">OTP Auto Resend</string>
 </resources>

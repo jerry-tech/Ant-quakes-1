@@ -8,4 +8,6 @@
     <color name="textColor">#DCD7F5</color>
     <color name="background_main">#fff</color>
     <color name="mtrl_textinput_default_box_stroke_color">#3a2c23</color>
+    <color name="blackcolor">#000</color>
+    <color name="otpText">#705F59</color>
 </resources>

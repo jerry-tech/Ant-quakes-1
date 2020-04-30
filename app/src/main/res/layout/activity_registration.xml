@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/signUp"
-    tools:context=".registration">
+    tools:context=".Registration">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,9 +27,8 @@
                 android:gravity="center"
                 android:rotation="90"
                 android:textColor="@color/signUp"
-                android:textStyle="bold"
                 android:text="@string/login"
-                android:textSize="22sp" />
+                android:textSize="19sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -75,7 +74,7 @@
                     android:inputType="text"
                     android:padding="20dp"
                     android:textColor="@color/background_main"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -91,7 +90,7 @@
                 android:backgroundTint="@color/background_main"
                 android:hint="@string/last_name"
                 android:textColorHint="@color/background_main"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 app:hintEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -106,7 +105,7 @@
                     android:padding="20dp"
                     android:textColor="@color/background_main"
                     android:textColorHint="@color/background_main"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -121,7 +120,7 @@
                 android:layout_marginRight="10dp"
                 android:hint="@string/username"
                 android:textColorHint="@color/background_main"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 app:hintEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -136,7 +135,7 @@
                     android:padding="20dp"
                     android:textColor="@color/background_main"
                     android:textColorHint="@color/background_main"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -151,7 +150,7 @@
                 android:layout_marginRight="10dp"
                 android:hint="@string/email_address"
                 android:textColorHint="@color/background_main"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 app:hintEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -166,7 +165,7 @@
                     android:padding="20dp"
                     android:textColor="@color/background_main"
                     android:textColorHint="@color/background_main"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -185,7 +184,7 @@
                     android:layout_marginRight="10dp"
                     android:hint="@string/_234"
                     android:textColorHint="@color/background_main"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     app:hintEnabled="true">
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -200,7 +199,7 @@
                         android:padding="20dp"
                         android:textColor="@color/background_main"
                         android:textColorHint="@color/background_main"
-                        android:textSize="18sp"
+                        android:textSize="16sp"
                         android:textStyle="bold" />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -215,7 +214,7 @@
                     android:layout_marginRight="10dp"
                     android:hint="@string/phone_number"
                     android:textColorHint="@color/background_main"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     app:hintEnabled="true">
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -227,7 +226,7 @@
                         android:padding="25dp"
                         android:textColor="@color/background_main"
                         android:textColorHint="@color/background_main"
-                        android:textSize="18sp"
+                        android:textSize="16sp"
                         android:textStyle="bold" />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -244,7 +243,7 @@
                 android:layout_marginRight="10dp"
                 android:hint="@string/password"
                 android:textColorHint="@color/background_main"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 app:passwordToggleEnabled="true"
                 app:passwordToggleDrawable="@drawable/reform_visibility"
                 app:passwordToggleTint="@color/background_main"
@@ -262,7 +261,7 @@
                     android:padding="20dp"
                     android:textColor="@color/background_main"
                     android:textColorHint="@color/background_main"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -277,7 +276,7 @@
                 android:layout_marginRight="10dp"
                 android:hint="@string/confirm_password"
                 android:textColorHint="@color/background_main"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 app:passwordToggleEnabled="true"
                 app:passwordToggleDrawable="@drawable/reform_visibility"
                 app:passwordToggleTint="@color/background_main"
@@ -295,12 +294,13 @@
                     android:padding="20dp"
                     android:textColor="@color/background_main"
                     android:textColorHint="@color/background_main"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
+                android:id="@+id/btnRegister"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/register"
@@ -310,7 +310,7 @@
                 android:layout_marginRight="10dp"
                 android:textStyle="bold"
                 android:textColor="@color/signUp"
-                android:textSize="22sp"
+                android:textSize="20sp"
                 android:background="@drawable/forgot_password"
                 />
 
@@ -319,7 +319,7 @@
                 android:layout_height="wrap_content"
                 android:padding="20dp"
                 android:layout_margin="20dp"
-                android:textSize="17sp"
+                android:textSize="16sp"
                 android:gravity="center"
                 android:textColor="@color/background_main"
                 android:text="@string/terms_of_use"/>

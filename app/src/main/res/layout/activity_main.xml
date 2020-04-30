@@ -37,7 +37,7 @@
                 android:text="@string/manage_all_your_customer_support"
                 android:textColor="@color/signUp"
                 android:textSize="18sp"
-                android:textStyle="bold" />
+                android:fontFamily="cursive" />
 
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
@@ -125,14 +125,16 @@
                 android:layout_gravity="center"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:layout_marginTop="40dp"
                 android:gravity="center"
                 android:text="@string/forgot_password_recover_below"
                 android:textColor="@color/signUp"
-                android:textSize="18sp" />
+                android:textSize="15sp" />
 
 
             <Button
+                android:id="@+id/btnForgot"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
@@ -162,7 +164,7 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="99"
+            android:layout_weight="90"
             android:background="@drawable/loginsidebar"
             android:onClick="nextRegister">
 
@@ -175,8 +177,7 @@
                 android:rotation="90"
                 android:text="@string/sign_up"
                 android:textColor="@color/background_main"
-                android:textSize="17sp"
-
+                android:textSize="14sp"
                 />
 
         </LinearLayout>
