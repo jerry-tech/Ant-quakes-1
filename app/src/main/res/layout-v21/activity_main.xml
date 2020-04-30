@@ -130,6 +130,7 @@
 
 
             <Button
+                android:id="@+id/btnForgot"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableTop="@drawable/ic_vpn_key_black_24dp"

@@ -62,14 +62,12 @@ public class MainActivity extends AppCompatActivity {
 
 		//action listener for forgotPass
 		forgotPass = findViewById(R.id.btnForgot);
-		forgotPass.setOnClickListener(v -> btnForgotPass());
+		forgotPass.setOnClickListener(v ->
+			btnForgotPass()
+		);
 	}
 
-	//Intent for forgot password
-	public void btnForgotPass(){
-		Intent intent = new Intent(this,ForgotPassword.class);
-		startActivity(intent);
-	}
+
 
 
 	//Logic for login button.
@@ -136,5 +134,11 @@ public class MainActivity extends AppCompatActivity {
 		startActivity(intent);
 
 		overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+	}
+
+	//Intent for forgot password
+	public void btnForgotPass(){
+		Intent intent = new Intent(this,ForgotPassword.class);
+		startActivity(intent);
 	}
 }
