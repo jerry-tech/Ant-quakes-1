@@ -30,7 +30,7 @@
                 android:layout_marginRight="30dp"
                 android:layout_marginBottom="20dp"
                 android:textStyle="bold"
-                android:text="Enter Verification Code"
+                android:text="@string/enter_verification_code"
                 android:textColor="@color/signUp"
                 android:gravity="center"
                 android:fontFamily="serif-monospace"
@@ -44,7 +44,7 @@
                 android:layout_below="@id/txtLogo"
                 android:src="@drawable/email"
                 android:layout_margin="20dp"
-                />
+                android:contentDescription="@string/open_message" />
 
             <TextView
                 android:id="@+id/txtOtp"
@@ -52,7 +52,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/openEmail"
                 android:textStyle="bold"
-                android:text="Enter OTP"
+                android:text="@string/enter_otp_code"
                 android:textColor="@color/signUp"
                 android:gravity="center"
                 android:textSize="20sp"
@@ -63,7 +63,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="We've sent an OTP to your number"
+                android:text="@string/otp_number"
                 android:layout_below="@id/txtOtp"
                 android:textStyle="bold"
                 android:textColor="@color/blackcolor"
@@ -100,7 +100,8 @@
                 android:layout_weight="100"
                 android:inputType="number"
                 android:padding="20dp"
-               />
+                tools:ignore="LabelFor"
+                android:importantForAutofill="no" />
 
             <EditText
                 android:id="@+id/OtpTwo"
@@ -114,7 +115,9 @@
                 android:layout_marginEnd="5dp"
                 android:padding="20dp"
                 android:inputType="number"
-                android:layout_weight="100" />
+                android:layout_weight="100"
+                android:importantForAutofill="no"
+                tools:ignore="LabelFor" />
 
             <EditText
                 android:id="@+id/OtpThree"
@@ -128,7 +131,9 @@
                 android:layout_marginEnd="5dp"
                 android:padding="20dp"
                 android:inputType="number"
-                android:layout_weight="100" />
+                android:layout_weight="100"
+                android:importantForAutofill="no"
+                tools:ignore="LabelFor" />
 
             <EditText
                 android:id="@+id/OtpFour"
@@ -142,7 +147,9 @@
                 android:layout_marginEnd="5dp"
                 android:padding="20dp"
                 android:inputType="number"
-                android:layout_weight="100" />
+                android:layout_weight="100"
+                android:importantForAutofill="no"
+                tools:ignore="LabelFor" />
 
             <EditText
                 android:id="@+id/OtpFive"
@@ -156,7 +163,9 @@
                 android:padding="20dp"
                 android:inputType="number"
                 android:layout_marginEnd="5dp"
-                android:layout_weight="100" />
+                android:layout_weight="100"
+                android:importantForAutofill="no"
+                tools:ignore="LabelFor" />
 
             <EditText
                 android:id="@+id/OtpSix"
@@ -168,7 +177,9 @@
                 android:padding="20dp"
                 android:background="@drawable/otpbuttons"
                 android:inputType="number"
-                android:layout_weight="100" />
+                android:layout_weight="100"
+                android:importantForAutofill="no"
+                tools:ignore="LabelFor" />
 
         </LinearLayout>
 
@@ -187,7 +198,8 @@
                 android:layout_weight="100"
                 android:fontFamily="serif-monospace"
                 android:textSize="18sp"
-                android:text="@string/otp_auto_resend_in"/>
+                android:text="@string/otp_auto_resend_in"
+                tools:ignore="RtlHardcoded" />
 
             <!--count down for auto resend of otp-->
             <TextView
@@ -215,7 +227,8 @@
             android:fontFamily="serif-monospace"
             android:textStyle="bold"
             android:layout_marginLeft="40dp"
-            android:background="@drawable/forgot_password"/>
+            android:background="@drawable/forgot_password"
+            tools:ignore="HardcodedText" />
     </LinearLayout>
 
 </ScrollView>
