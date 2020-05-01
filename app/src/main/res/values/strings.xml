@@ -22,4 +22,12 @@
     <string name="otp_code">OTP CODE</string>
     <string name="_29_sec"><u>29</u> sec</string>
     <string name="otp_auto_resend_in">OTP Auto Resend</string>
+    <string name="we_ve_sent_an_otp_to_your_number">We\'ve sent an OTP to your number</string>
+    <string name="enter_verification_code">Enter Verification Code</string>
+    <string name="open_message">Open Message</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="otp_number">We\'ve sent an OTP to your number</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="back_login"><u>Back to login</u></string>
+    <string name="forgot_password">Forgot Password</string>
 </resources>
