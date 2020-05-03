@@ -138,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
 
 	//Intent for forgot password
 	public void btnForgotPass(){
-		Intent intent = new Intent(this,ForgotPassword.class);
+		Intent intent = new Intent(this,Dashboard.class);
 		startActivity(intent);
 	}
 }

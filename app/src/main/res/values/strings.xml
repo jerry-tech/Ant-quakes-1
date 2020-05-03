@@ -31,4 +31,14 @@
     <string name="back_login"><u>Back to login</u></string>
     <string name="forgot_password">Forgot Password</string>
     <string name="referral_id">Referral Id</string>
+    <string name="users_image">Users Image</string>
+    <string name="airtime_logo">airtime logo</string>
+    <string name="airtime">Airtime</string>
+    <string name="subscription">Subscription</string>
+    <string name="transfer">Transfer</string>
+    <string name="bulk_sms">Bulk SMS</string>
+    <string name="electric_bill">Electric Bill</string>
+    <string name="savings">Savings</string>
+    <string name="airtime_to_money">Airtime to Money</string>
+    <string name="examination_e_pin">Examination E-pin</string>
 </resources>
