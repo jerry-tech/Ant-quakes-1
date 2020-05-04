@@ -11,7 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ForgotPassword" android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+        <activity android:name=".Dashboard" android:theme="@style/Theme.AppCompat.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".ForgotPassword"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".AuthOtp"
             android:screenOrientation="portrait"

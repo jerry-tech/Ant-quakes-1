@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:bottom="150dp">
+        <shape android:shape="rectangle">
+            <size android:height="250dp" android:width="200dp"/>
+            <solid android:color="@color/signUp"/>
+        </shape>
+    </item>
+
+    <item android:top="230dp">
+        <shape android:shape="rectangle">
+            <size android:height="200dp" android:width="200dp"/>
+            <solid android:color="@color/background_main"/>
+        </shape>
+    </item>
+</layer-list>
