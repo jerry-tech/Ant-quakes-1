@@ -203,31 +203,32 @@
 
             <!--count down for auto resend of otp-->
             <TextView
-                android:layout_gravity="center_horizontal"
+                android:id="@+id/timer_otp"
                 android:layout_width="0dp"
-                android:layout_weight="100"
-                android:textStyle="bold"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:text="@string/_29_sec"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="100"
                 android:fontFamily="serif-monospace"
                 android:gravity="center"
-                />
+                android:text="@string/_29_sec"
+                android:textSize="18sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <Button
+            android:id="@+id/verify"
             android:layout_width="match_parent"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="20dp"
             android:layout_height="wrap_content"
-            android:textSize="17sp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
             android:layout_marginRight="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/forgot_password"
+            android:fontFamily="serif-monospace"
             android:text="Verify"
             android:textColor="@color/signUp"
-            android:fontFamily="serif-monospace"
+            android:textSize="17sp"
             android:textStyle="bold"
-            android:layout_marginLeft="40dp"
-            android:background="@drawable/forgot_password"
             tools:ignore="HardcodedText" />
 
         <TextView

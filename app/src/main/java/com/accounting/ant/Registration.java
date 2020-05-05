@@ -1,7 +1,9 @@
 package com.accounting.ant;
 
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -19,6 +21,7 @@ import org.json.JSONObject;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.regex.Pattern;
 
 public class Registration extends AppCompatActivity {
 	//Getting the URL for the API
@@ -29,6 +32,10 @@ public class Registration extends AppCompatActivity {
 
 	//Getting the components
 	EditText firstName, lastName, username, email, refID, phoneNumber, countryCode, password, verify_password;
+
+	//Using Shared preferences.
+	SharedPreferences preferences;
+	SharedPreferences.Editor editor;
 
 
 	Button button;
@@ -54,11 +61,36 @@ public class Registration extends AppCompatActivity {
 		verify_password = findViewById(R.id.confPass);
 		button = findViewById(R.id.btnRegister);
 		button.setOnClickListener(v -> {
-			//Triggering the register page.
-			registerUser(firstName.getText().toString(),lastName.getText().toString(),email.getText().toString(),phoneNumber.getText().toString(),
-				username.getText().toString(),password.getText().toString(),verify_password.getText().toString(),refID.getText().toString()
-			);
+
+			//Validating the phone number and registering the users account.
+			numberChecker(countryCode.getText().toString(), phoneNumber.getText().toString());
+
 		});
+	}
+
+	//Code to validate phone number
+	private void numberChecker(String countryCode, String phonenumber) {
+		String phone = "";
+		String newCode = "";
+
+		//Pattern for phone number
+		boolean check = Pattern.compile("[0]*[\\d]{9,}").matcher(phonenumber).matches();
+
+		//Pattern for country code
+		boolean checker = Pattern.compile("[+][1-9]{1,3}").matcher(countryCode).matches();
+
+		if (check && checker) {
+			phone = phonenumber;
+			newCode = countryCode;
+
+			//Triggering the register page.
+			registerUser(firstName.getText().toString(), lastName.getText().toString(), email.getText().toString(), phone.toString(),
+					username.getText().toString(), password.getText().toString(), verify_password.getText().toString(), refID.getText().toString()
+			);
+		} else {
+			Toast.makeText(this, "Country Code / Phone number is wrong!", Toast.LENGTH_SHORT).show();
+		}
+
 	}
 
 	//Method to register users.
@@ -81,10 +113,17 @@ public class Registration extends AppCompatActivity {
 
 				if (!error) {
 					Toast.makeText(getApplicationContext(), "Hi " + username + ", Your account has been created!", Toast.LENGTH_SHORT).show();
+					//Using Shared preferences.
+					preferences = getSharedPreferences("user_details", Context.MODE_PRIVATE);
+					editor = preferences.edit();
+					editor.putString("Email", email);
+//					editor.remove("Email");
+					editor.apply();
 
 					// Launch login activity
 					Intent intent = new Intent(Registration.this, AuthOtp.class);
 					startActivity(intent);
+					finish();
 
 				} else {
 
