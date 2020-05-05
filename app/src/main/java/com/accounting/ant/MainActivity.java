@@ -86,7 +86,6 @@ public class MainActivity extends AppCompatActivity {
 
 				//Logic for correct login information
 				if (!error) {
-//					String user = jObj.getJSONObject("user").getString("name");
 					Toast.makeText(MainActivity.this, "Working perfectly", Toast.LENGTH_SHORT).show();
 				} else {
 
