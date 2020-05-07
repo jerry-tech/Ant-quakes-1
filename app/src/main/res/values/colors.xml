@@ -11,4 +11,6 @@
     <color name="blackcolor">#000</color>
     <color name="otpText">#705F59</color>
     <color name="new_Background">#EBA7A7</color>
+    <color name="light_bgmain">#94B71C1C</color>
+    <color name="red_bgg">#BA0020</color>
 </resources>

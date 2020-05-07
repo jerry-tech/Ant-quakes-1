@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ant</string>
+    <string name="airtime_to_money">kaadi si owo</string>
+    <string name="back_login"><u>Pada si buwolu wọle</u></string>
+    <string name="bulk_sms">Olopobobo SMS</string>
+    <string name="electric_bill">Owo-ina</string>
+    <string name="enter_otp">Tẹ OTP</string>
+    <string name="enter_otp_code">Tẹ OTP Code</string>
+    <string name="enter_verification_code">Tẹ koodu Ijeri</string>
+    <string name="examination_e_pin">E-PIN ayewo</string>
+    <string name="first_name">Oruko omode</string>
+    <string name="forgot_password">Gbagbe ọrọ aṣina bi</string>
+    <string name="forgot_password_recover_below">Gbagbe ọrọ aṣina bi ? Bọsipọ Ni isalẹ</string>
+    <string name="last_name">Oruko idile</string>
+    <string name="login">Wo ile</string>
+    <string name="manage_all_your_customer_support">Ṣakoso gbogbo atilẹyin alabara rẹ</string>
+    <string name="open_message">Ṣi ifiranṣẹ</string>
+    <string name="otp_auto_resend_in">tun se OTP</string>
+    <string name="otp_code">OTP CODE</string>
+    <string name="otp_number">A ti firanṣẹ OTP si nọmba rẹ</string>
+    <string name="we_ve_sent_an_otp_to_your_number">A ti firanṣẹ OTP si nọmba rẹ</string>
+    <string name="transfer">Gbigbe owo</string>
+    <string name="username">orukọ olumulo</string>
+    <string name="terms_of_use">Nipasẹ lilo app yii, o gba si <u> Awọn ofin lilo </u> ati <u> Afihan Afihan </u></string>
+    <string name="subscription">ṣiṣe alabapin</string>
+    <string name="savings">ifowopamọ</string>
+    <string name="sign_up">forukọsilẹ</string>
+    <string name="_29_sec"><u>29</u>aaya</string>
+    <string name="confirm_password">So ni pato orukoabawole re</string>
+    <string name="copyright_2020_all_rights_reserved">Aṣẹ © 2020 Gbogbo awọn ẹtọ wa ni ipamọ.</string>
+    <string name="email_address">Adirẹsi imeeli</string>
+    <string name="password">ọrọ igbaniwọle</string>
+    <string name="phone_number">nomba fonu</string>
+    <string name="referral_id">Id Itọkasi</string>
+    <string name="reset_password">tun ọrọ igbaniwọle pada</string>
+    <string name="register">forukọsilẹ</string>
+    <string name="users_image">aworan olumulo</string>
+    <string name="confirm">jẹrisi</string>
+    <string name="airtime">rekọja kaadi</string>
+</resources>
