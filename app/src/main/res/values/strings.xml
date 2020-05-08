@@ -4,25 +4,22 @@
     <string name="manage_all_your_customer_support">Manage all your customer support</string>
     <string name="forgot_password_recover_below">Forgot Password ? Recover Below</string>
     <string name="login">Login</string>
-    <string name="logo">logo</string>
-    <string name="antquakes">Antquakes</string>
+    <string name="logo" translatable="false">logo</string>
+    <string name="antquakes" translatable="false">Antquakes</string>
     <string name="first_name">First Name</string>
     <string name="last_name">Last Name</string>
     <string name="username">Username</string>
     <string name="email_address">Email Address</string>
     <string name="password">Password</string>
     <string name="confirm_password">Confirm Password</string>
-    <string name="terms_of_use">By using this app, you agree to <u>Terms of Use</u> and <u>Privacy Policy</u></string>
     <string name="register">Register</string>
     <string name="phone_number">Phone Number</string>
-    <string name="_234">+234</string>
+    <string name="_234" translatable="false">+234</string>
     <string name="confirm">Confirm</string>
     <string name="copyright_2020_all_rights_reserved">Copyright © 2020 All rights reserved.</string>
-    <string name="enter_otp_code">Enter OTP Code</string>
     <string name="otp_code">OTP CODE</string>
     <string name="_29_sec"><u>29</u> sec</string>
     <string name="otp_auto_resend_in">OTP Auto Resend</string>
-    <string name="we_ve_sent_an_otp_to_your_number">We\'ve sent an OTP to your number</string>
     <string name="enter_verification_code">Enter Verification Code</string>
     <string name="open_message">Open Message</string>
     <string name="enter_otp">Enter OTP</string>
@@ -32,7 +29,7 @@
     <string name="forgot_password">Forgot Password</string>
     <string name="referral_id">Referral Id</string>
     <string name="users_image">Users Image</string>
-    <string name="airtime_logo">airtime logo</string>
+    <string name="airtime_logo" translatable="false">airtime logo</string>
     <string name="airtime">Airtime</string>
     <string name="subscription">Subscription</string>
     <string name="transfer">Transfer</string>
@@ -40,5 +37,18 @@
     <string name="electric_bill">Electric Bill</string>
     <string name="savings">Savings</string>
     <string name="airtime_to_money">Airtime to Money</string>
-    <string name="examination_e_pin">Examination E-pin</string>
+    <string name="examination_e_pin">Examination E-PIN</string>
+    <string name="antquake_logo" translatable="false">AntQuake Logo</string>
+    <string name="powered_by_codeweb" translatable="false">Powered by CodeWeb</string>
+    <string-array name="languageItems">
+        <item>Select a Language</item>
+        <item>English</item>
+        <item>French</item>
+        <item>Yoruba</item>
+        <item>Igbo</item>
+        <item>Hausa</item>
+    </string-array>
+    <string name="enter_otp_code">Enter OTP Code</string>
+    <string name="we_ve_sent_an_otp_to_your_number">We\'ve sent an OTP to your Number</string>
+    <string name="terms_of_use">By using this app, you agree to the <u> Terms of Use </u> and <u> Privacy Policy </u>.</string>
 </resources>
