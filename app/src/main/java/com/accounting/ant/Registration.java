@@ -53,7 +53,7 @@ public class Registration extends AppCompatActivity {
 		firstName = findViewById(R.id.firstName);
 		lastName = findViewById(R.id.lastName);
 		username = findViewById(R.id.userName);
-		email = findViewById(R.id.email);
+		email = findViewById(R.id.forgot_email);
 		refID = findViewById(R.id.refId);
 		phoneNumber = findViewById(R.id.phNumber);
 		countryCode = findViewById(R.id.dialCode);
