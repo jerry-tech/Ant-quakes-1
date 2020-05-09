@@ -1,7 +1,9 @@
 package com.accounting.ant;
 
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -23,6 +25,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
+	//Using Shared preferences.
+	SharedPreferences preferences;
+	SharedPreferences.Editor editor;
+
+
 	//Creating the tag to handle success or cancel events.
 	private static final String TAG = "LoginActivity";
 	//The url for the LoginAPI
@@ -30,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
 	ProgressDialog progressDialog;
 	TextInputEditText username, password;
-	Button loginBtn,forgotPass;
+	Button loginBtn, forgotPass;
 
 	TextView footerTime;
 
@@ -57,17 +64,15 @@ public class MainActivity extends AppCompatActivity {
 		//Button to log in user.
 		loginBtn.setOnClickListener(event -> {
 			//Implementing the login method
-			loginUser(username.getText().toString(),password.getText().toString());
+			loginUser(username.getText().toString(), password.getText().toString());
 		});
 
 		//action listener for forgotPass
 		forgotPass = findViewById(R.id.btnForgot);
 		forgotPass.setOnClickListener(v ->
-			btnForgotPass()
+				btnForgotPass()
 		);
 	}
-
-
 
 
 	//Logic for login button.
@@ -86,7 +91,17 @@ public class MainActivity extends AppCompatActivity {
 
 				//Logic for correct login information
 				if (!error) {
-					Toast.makeText(MainActivity.this, "Working perfectly", Toast.LENGTH_SHORT).show();
+
+					//Using Shared preferences.
+					preferences = getSharedPreferences("user_details", Context.MODE_PRIVATE);
+					editor = preferences.edit();
+					editor.putString("username", username);
+					editor.apply();
+
+					//Moving to the registeration page.
+					Intent intent = new Intent(this, Dashboard.class);
+					startActivity(intent);
+					finish();
 				} else {
 
 					String errorMsg = jObj.getString("text");
@@ -136,8 +151,8 @@ public class MainActivity extends AppCompatActivity {
 	}
 
 	//Intent for forgot password
-	public void btnForgotPass(){
-		Intent intent = new Intent(this,ForgotPassword.class);
+	public void btnForgotPass() {
+		Intent intent = new Intent(this, ForgotPassword.class);
 		startActivity(intent);
 	}
 }
