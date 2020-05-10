@@ -50,7 +50,7 @@ public class AuthOtp extends AppCompatActivity {
 	//Creating an object of the countdown timer
 	CountDownTimer countDownTimer;
 	//Setting the countdown timer to 29 seconds.
-	int counter = 29;
+	int counter = 59;
 
 
 	@Override
@@ -98,7 +98,7 @@ public class AuthOtp extends AppCompatActivity {
 
 	//Method for countdown timer
 	private void countdownTimer() {
-		countDownTimer = new CountDownTimer(30000, 1000) {
+		countDownTimer = new CountDownTimer(60000, 1000) {
 			@Override
 			public void onTick(long millisUntilFinished) {
 				countdown.setText(counter + " seconds");
@@ -112,7 +112,7 @@ public class AuthOtp extends AppCompatActivity {
 				if (counter <= 0) {
 					cancel();
 
-					counter = 29;
+					counter = 59;
 					countdown.setText(counter + " seconds");
 					counter--;
 				}
