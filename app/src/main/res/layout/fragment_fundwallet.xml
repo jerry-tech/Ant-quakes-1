@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="horizontal">
+
+        <TextView
+            android:id="@+id/text_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:textColor="@color/blackcolor"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toTopOf="@+id/cardViewFund"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.266"
+            tools:layout_editor_absoluteX="-16dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewFund"
+            android:layout_width="match_parent"
+            android:layout_height="566dp"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="12dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.379">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txtMainWallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="23dp"
+                    android:layout_marginRight="23dp"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/nav_header_vertical_spacing"
+                    android:text="@string/with_atm_credit_debit_card"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtSubWallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtMainWallet"
+                    android:layout_alignStart="@+id/txtMainWallet"
+                    android:layout_alignLeft="@+id/txtMainWallet"
+                    android:layout_alignEnd="@+id/txtMainWallet"
+                    android:layout_alignRight="@+id/txtMainWallet"
+                    android:layout_marginStart="-22dp"
+                    android:layout_marginLeft="-22dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="-19dp"
+                    android:layout_marginRight="-19dp"
+
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/fund_wallet_online_with_credit_card_debit_card"
+                    android:textSize="18sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtAmount"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtSubWallet"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:hint="@string/amount"
+                    android:textColorHint="@color/blackcolor"
+                    android:textSize="20sp"
+                    app:hintEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtAmountInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:backgroundTint="@color/blackcolor"
+                        android:inputType="number"
+                        android:drawableLeft="@drawable/naira"
+                        android:drawablePadding="22dp"
+                        android:padding="20dp"
+                        android:paddingStart="20dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingEnd="20dp"
+                        android:textColor="@color/blackcolor"
+                        android:textColorHint="@color/blackcolor"
+                        android:textSize="23sp"
+                        android:textStyle="bold"
+                        android:drawableStart="@drawable/naira" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtAmount"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="165dp"
+                    android:layout_marginLeft="165dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginEnd="49dp"
+                    android:layout_marginRight="49dp"
+                    android:background="@drawable/rounded_button"
+                    android:text="@string/submit"
+                    android:textColor="@color/background_main"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="40dp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="@string/copyright_2020_all_rights_reserved"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/cardViewFund"
+            app:layout_constraintStart_toStartOf="@+id/cardViewFund"
+            app:layout_constraintTop_toBottomOf="@+id/cardViewFund"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single" android:enabled="true">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_dashboard_black_24dp"
+            android:title="@string/dashboard" />
+        <item
+            android:id="@+id/nav_wallet"
+            android:icon="@drawable/ic_account_balance_wallet_black_24dp"
+            android:title="@string/fund_wallet" />
+        <item
+            android:id="@+id/nav_creditFirst"
+            android:icon="@drawable/ic_filter_1_black_24dp"
+            android:title="@string/carry1st_credit" />
+        <item
+            android:id="@+id/nav_transHistory"
+            android:icon="@drawable/ic_history_chart_black_24dp"
+            android:title="@string/transaction_history"
+            />
+        <item
+            android:id="@+id/nav_logOut"
+            android:icon="@drawable/logout"
+            android:title="@string/logout" />
+    </group>
+
+</menu>

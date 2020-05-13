@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".MainWallet">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:padding="25dp"
+            android:text="@string/make_payment"
+            android:textColor="@color/background_main"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewPay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.215"
+            android:layout_marginStart="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background_main">
+
+                <TextView
+                    android:id="@+id/subTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="20dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/fund_wallet_online_with_credit_debit_card"
+                    android:textColor="@color/blackcolor"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/firstNamePay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/subTxt"
+                    android:drawableStart="@drawable/person_black"
+                    android:drawableLeft="@drawable/person_black"
+                    android:drawablePadding="15dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/fundwalletbg"
+                    android:enabled="false"
+                    android:hint="@string/first_name"
+                    android:padding="17dp"
+                    android:textColorHint="@color/blackcolor"
+                    android:textSize="18sp"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                     />
+
+                <EditText
+                    android:id="@+id/lastNamePay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/firstNamePay"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginRight="18dp"
+                    android:drawableStart="@drawable/person_black"
+                    android:drawableLeft="@drawable/person_black"
+                    android:drawablePadding="15dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginTop="19dp"
+                    android:background="@drawable/fundwalletbg"
+                    android:enabled="false"
+                    android:hint="@string/last_name"
+                    android:padding="17dp"
+                    android:textColorHint="@color/blackcolor"
+                    android:textSize="18sp"
+                    android:inputType="text"
+                    android:importantForAutofill="no" />
+
+                <EditText
+                    android:id="@+id/emailPay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lastNamePay"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginTop="19dp"
+                    android:drawableStart="@drawable/email_black"
+                    android:drawableLeft="@drawable/email_black"
+                    android:drawablePadding="15dp"
+                    android:background="@drawable/fundwalletbg"
+                    android:enabled="false"
+                    android:hint="@string/email_address"
+                    android:padding="17dp"
+                    android:textColorHint="@color/blackcolor"
+                    android:textSize="18sp"
+                    android:importantForAutofill="no"
+                    android:inputType="textEmailAddress" />
+
+                <EditText
+                    android:id="@+id/phonePay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/emailPay"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginTop="19dp"
+                    android:inputType="phone"
+                    android:drawableStart="@drawable/phone_black"
+                    android:drawableLeft="@drawable/phone_black"
+                    android:drawablePadding="15dp"
+                    android:background="@drawable/fundwalletbg"
+                    android:enabled="false"
+                    android:hint="@string/phone_number"
+                    android:padding="17dp"
+                    android:textColorHint="@color/blackcolor"
+                    android:textSize="18sp"
+                    android:importantForAutofill="no" />
+
+                <EditText
+                    android:id="@+id/amountPay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/phonePay"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginTop="19dp"
+                    android:background="@drawable/fundwalletbg"
+                    android:enabled="false"
+                    android:drawableLeft="@drawable/naira"
+                    android:drawablePadding="22dp"
+                    android:hint="@string/amount"
+                    android:padding="17dp"
+                    android:textColor="@color/blackcolor"
+                    android:textColorHint="@color/blackcolor"
+                    android:textSize="18sp"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:drawableStart="@drawable/naira" />
+
+                <EditText
+                    android:id="@+id/amountRefId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/amountPay"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginTop="19dp"
+                    android:background="@drawable/fundwalletbg"
+                    android:enabled="false"
+                    android:drawableStart="@drawable/ekey_black"
+                    android:drawableLeft="@drawable/ekey_black"
+                    android:drawablePadding="15dp"
+                    android:hint="@string/reference_id"
+                    android:padding="17dp"
+                    android:textColorHint="@color/blackcolor"
+                    android:textSize="18sp"
+                    android:importantForAutofill="no"
+                    android:inputType="text" />
+
+                <Button
+                    android:id="@+id/btnPay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/amountRefId"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/rounded_button"
+                    android:gravity="center"
+                    android:padding="17dp"
+                    android:textColor="@color/background_main"
+                    android:text="@string/pay_securely_with_paystack"
+                    android:textColorHint="@color/blackcolor"
+                    android:textSize="18sp" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnPay"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    app:cardCornerRadius="12dp"
+                    android:background="@color/background_main"
+                    android:backgroundTint="@color/background_main"
+                  >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/paystack"
+                        android:contentDescription="@string/payment_logo" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:textColor="@color/background_main"
+            android:text="@string/copyright_2020_all_rights_reserved"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/cardViewPay"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
