@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#EE2737</color>
+    <color name="colorPrimaryDark">#BA0020</color>
+    <color name="colorAccent">#643E46</color>
     <color name="signUp">#3a2c23</color>
     <color name="regInput">#55443B</color>
-    <color name="textColor">#DCD7F5</color>
+    <color name="whiteSmoke">#D6D2D2</color>
     <color name="background_main">#fff</color>
     <color name="mtrl_textinput_default_box_stroke_color">#3a2c23</color>
     <color name="blackcolor">#000</color>

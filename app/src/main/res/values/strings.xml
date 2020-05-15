@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Ant</string>
+    <string name="app_name">AntQuakes</string>
     <string name="sign_up">Sign Up</string>
     <string name="manage_all_your_customer_support">Manage all your customer support</string>
     <string name="forgot_password_recover_below">Forgot Password ? Recover Below</string>
@@ -36,8 +36,8 @@
     <string name="bulk_sms">Bulk SMS</string>
     <string name="electric_bill">Electric Bill</string>
     <string name="savings">Savings</string>
-    <string name="airtime_to_money">Airtime to Money</string>
-    <string name="examination_e_pin">Examination E-PIN</string>
+    <string name="airtime_to_money">Airtime to $$</string>
+    <string name="examination_e_pin">Exam E-PIN</string>
     <string name="antquake_logo" translatable="false">AntQuake Logo</string>
     <string name="powered_by_codeweb" translatable="false">Powered by CodeWeb</string>
     <string-array name="languageItems">
@@ -51,4 +51,28 @@
     <string name="enter_otp_code">Enter OTP Code</string>
     <string name="we_ve_sent_an_otp_to_your_number">We\'ve sent an OTP to your Number</string>
     <string name="terms_of_use">By using this app, you agree to the <u> Terms of Use </u> and <u> Privacy Policy </u>.</string>
+
+    <string name="title_activity_user_options">UserOptions</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="fund_wallet">Fund Wallet</string>
+    <string name="carry1st_credit">Carry1st Credit</string>
+    <string name="transaction_history">Transaction History</string>
+    <string name="logout">Logout</string>
+    <string name="menu_share">menu share</string>
+    <string name="with_atm_credit_debit_card">With ATM Credit/Debit Card</string>
+    <string name="fund_wallet_online_with_credit_card_debit_card">Fund Wallet Online with Credit Card/Debit Card</string>
+    <string name="amount">Amount</string>
+    <string name="fund_wallet_online_with_credit_debit_card">Fund Wallet Online with Credit/Debit Card</string>
+    <string name="pay_securely_with_paystack">Pay with PayStack</string>
+    <string name="make_payment">Make Payment</string>
+    <string name="reference_id">Reference ID</string>
+    <string name="payment_logo">payment logo</string>
+    <string name="submit">Submit</string>
+
 </resources>
