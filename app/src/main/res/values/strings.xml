@@ -16,7 +16,7 @@
     <string name="phone_number">Phone Number</string>
     <string name="_234" translatable="false">+234</string>
     <string name="confirm">Confirm</string>
-    <string name="copyright_2020_all_rights_reserved">Copyright © 2020 All rights reserved.</string>
+    <string name="copyright_2020_all_rights_reserved">Copyright © 2020 AntQuakes Inc. All rights reserved.</string>
     <string name="otp_code">OTP CODE</string>
     <string name="_29_sec"><u>29</u> sec</string>
     <string name="otp_auto_resend_in">OTP Auto Resend</string>
@@ -53,10 +53,15 @@
         <item>Port-Harcourt Electric - PHEDC</item>
         <item>Kano Electric - KEDCO</item>
     </string-array>
-
+    <string-array name="amountCard">
+        <item>Amount</item>
+        <item>100</item>
+        <item>200</item>
+        <item>500</item>
+        <item>1000</item>
+    </string-array>
     <string-array name="walletAmt">
         <item>Wallet - ₦0</item>
-        <item>ATM Card</item>
     </string-array>
     <string-array name="dom">
         <item>Cable Package</item>
@@ -75,6 +80,25 @@
         <item>GLO</item>
         <item>MTN</item>
         <item>9Mobile</item>
+    </string-array>
+    <string-array name="dataBundle">
+        <item>Daily Plan</item>
+        <item>Weekly Plan</item>
+        <item>Monthly Plan</item>
+        <item>Binge Plan</item>
+    </string-array>
+    <string-array name="dataType">//subject to removal @osas note that
+        <item>100MB @ ₦100</item>
+        <item>100MB @ ₦100</item>
+        <item>100MB @ ₦100</item>
+        <item>100MB @ ₦100</item>
+    </string-array>
+    <string-array name="examBody">//subject to removal @osas note that
+        <item>Examination Body</item>
+        <item>WAEC</item>
+        <item>NECO</item>
+        <item>GCE</item>
+        <item>NABTEB</item>
     </string-array>
     <string-array name="cableTv">
         <item>Bouquet / Package</item>
@@ -136,8 +160,8 @@
     <string name="tab_text_3">Transfer</string>
     <string name="tab_text_4">Bulk SMS</string>
     <string name="tab_text_5">Electric Bill</string>
-    <string name="tab_text_6">Savings</string>
-    <string name="tab_text_7">Airtime To Money</string>
+    <string name="tab_text_6">Bulk Airtime</string>
+    <string name="tab_text_7">Buy Data Bundle</string>
     <string name="tab_text_8">Examination E-Pin</string>
 
     <!-- TODO: Remove or change this placeholder text -->
@@ -151,5 +175,23 @@
     <string name="meter_name_account_name">Meter Name / Account Name</string>
     <string name="pay_now">Pay Now</string>
     <string name="smart_card_iuc_name">Smart Card / IUC Name</string>
+    <string name="send_sms">Send SMS</string>
+    <string name="sender_id">Sender ID</string>
+    <string name="destination_numbers">Destination Numbers</string>
+    <string name="message">Message</string>
+    <string name="receiver_username">Receiver Username</string>
+    <string name="tranfer_money">Tranfer Money</string>
+    <string name="buy_bulk_airtime">Buy Bulk Airtime</string>
+    <string name="quantity">Quantity</string>
+    <string name="buy">Buy</string>
+    <string name="bulk_airtime">Bulk Airtime</string>
+    <string name="buy_databundle">Buy DataBundle</string>
+    <string name="buy_data_bundle">Buy Data Bundle</string>
+    <string name="_1_500">1,500</string>
+    <string name="exam_year">Exam Year</string>
+    <string name="examination_pin">Examination E-Pin</string>
+    <string name="buy_pin">Buy Pin</string>
+    <string name="carry1st_username">Carry1st Username</string>
+    <string name="buy_credit">Buy Credit</string>
 
 </resources>

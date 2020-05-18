@@ -9,8 +9,8 @@
     <color name="background_main">#fff</color>
     <color name="mtrl_textinput_default_box_stroke_color">#3a2c23</color>
     <color name="blackcolor">#000</color>
-    <color name="otpText">#705F59</color>
     <color name="new_Background">#EBA7A7</color>
     <color name="light_bgmain">#94B71C1C</color>
     <color name="red_bgg">#BA0020</color>
+    <color name="redLight">#F8A4AE</color>
 </resources>

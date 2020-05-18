@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
 import androidx.fragment.app.Fragment;
 
@@ -65,7 +67,30 @@ public class DashExamPin extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_dash_exam_pin, container, false);
+      View root = inflater.inflate(R.layout.fragment_dash_exam_pin, container, false);
+
+        //dropdown for wallet amount
+        Spinner walletSpinner = root.findViewById(R.id.walletEpin);
+        ArrayAdapter<CharSequence> adapterWallet = ArrayAdapter.createFromResource(
+                root.getContext(),
+                R.array.walletAmt,
+                R.layout.spinner_wallet
+        );
+        adapterWallet.setDropDownViewResource(R.layout.spinner_dropdown_item);
+        walletSpinner.setAdapter(adapterWallet);
+
+        //network type
+        Spinner examBody = root.findViewById(R.id.examType);
+        // using the array adapter class && the array adapter public constructor which accepts three parameters to get all items
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
+                root.getContext(),//getting the application context(this);
+                R.array.examBody,
+                R.layout.spinner_network
+        );
+        adapter.setDropDownViewResource(R.layout.spinner_dropdown_item);
+        examBody.setAdapter(adapter);
+
+      return root;
     }
 
     // TODO: Rename method, update argument and hook method into UI event

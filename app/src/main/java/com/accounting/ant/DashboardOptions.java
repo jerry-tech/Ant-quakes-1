@@ -12,7 +12,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabLayout;
 
-public class DashboardOptions extends AppCompatActivity implements DashAirtime.OnFragmentInteractionListener,DashSubscription.OnFragmentInteractionListener,DashTransfer.OnFragmentInteractionListener, DashBulkSms.OnFragmentInteractionListener,DashElectric.OnFragmentInteractionListener,DashSavings.OnFragmentInteractionListener,DashAirToMoney.OnFragmentInteractionListener,DashExamPin.OnFragmentInteractionListener{
+public class DashboardOptions extends AppCompatActivity implements DashAirtime.OnFragmentInteractionListener,DashSubscription.OnFragmentInteractionListener,DashTransfer.OnFragmentInteractionListener, DashBulkSms.OnFragmentInteractionListener,DashElectric.OnFragmentInteractionListener, DashBulkAirtime.OnFragmentInteractionListener, DashDataBundle.OnFragmentInteractionListener,DashExamPin.OnFragmentInteractionListener{
     String fragmentId;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

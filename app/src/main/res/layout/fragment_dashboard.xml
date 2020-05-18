@@ -267,15 +267,14 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:contentDescription="@string/airtime_logo"
-                        android:src="@drawable/savings" />
+                        android:src="@drawable/airtimes" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
                         android:textStyle="bold"
-                        
-                        android:text="@string/savings"
+                        android:text="@string/bulk_airtime"
                         android:textColor="@color/signUp"
                         android:textSize="18sp" />
 
@@ -284,7 +283,7 @@
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
-                android:id="@+id/cardClickConvert"
+                android:id="@+id/buyData"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
@@ -314,7 +313,7 @@
                         android:layout_marginTop="12dp"
                         android:textStyle="bold"
                         
-                        android:text="@string/airtime_to_money"
+                        android:text="@string/buy_databundle"
                         android:textColor="@color/signUp"
                         android:textSize="18sp" />
 

@@ -10,7 +10,7 @@ public class FundWalletViewModel extends ViewModel {
 
     public FundWalletViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("");
+        mText.setValue("Fund Wallet");
     }
 
     public LiveData<String> getText() {
