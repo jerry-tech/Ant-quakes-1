@@ -6,7 +6,5 @@
     android:layout_width="match_parent"
     android:layout_height="?android:attr/listPreferredItemHeight"
     android:ellipsize="marquee"
-    android:fontFamily="serif-monospace"
     android:textSize="18sp"
-    android:textStyle="bold"
-    android:textColor="@color/red_bgg"/>
+    android:textColor="@color/blackcolor"/>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<EditText
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="18sp"
+    android:background="@color/background_main"
+    android:textColor="@color/blackcolor"
+    android:drawableLeft="@drawable/ic_satellite_black_24dp"
+    android:drawablePadding="12dp"
+    android:enabled="false"
+    android:cursorVisible="false"
+    android:selectAllOnFocus="false"
+    android:focusable="false"
+    android:clickable="false"
+    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+    tools:ignore="LabelFor,RtlHardcoded,TextFields"
+    android:importantForAutofill="no" />
