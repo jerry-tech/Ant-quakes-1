@@ -8,8 +8,6 @@
     android:textSize="18sp"
     android:gravity="left"
     android:background="@color/background_main"
-    android:textColor="@color/red_bgg"
+    android:textColor="@color/blackcolor"
     android:padding="7dip"
-    android:fontFamily="serif-monospace"
-    android:textStyle="bold"
     tools:ignore="RtlHardcoded" />

@@ -98,8 +98,8 @@ public class MainActivity extends AppCompatActivity {
 					editor.putString("username", username);
 					editor.apply();
 
-					//Moving to the registeration page.
-					Intent intent = new Intent(this, Dashboard.class);
+					//Moving to the registration page.
+					Intent intent = new Intent(this, UserOptions.class);
 					startActivity(intent);
 					finish();
 				} else {
@@ -142,7 +142,7 @@ public class MainActivity extends AppCompatActivity {
 			progressDialog.dismiss();
 	}
 
-	//Moving to the registeration page.
+	//Moving to the registration page.
 	public void nextRegister(View view) {
 		Intent intent = new Intent(this, Registration.class);
 		startActivity(intent);
@@ -152,7 +152,7 @@ public class MainActivity extends AppCompatActivity {
 
 	//Intent for forgot password
 	public void btnForgotPass() {
-		Intent intent = new Intent(this, ForgotPassword.class);
+		Intent intent = new Intent(this, UserOptions.class);
 		startActivity(intent);
 	}
 }

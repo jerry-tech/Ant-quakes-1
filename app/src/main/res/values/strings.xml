@@ -40,6 +40,27 @@
     <string name="examination_e_pin">Exam E-PIN</string>
     <string name="antquake_logo" translatable="false">AntQuake Logo</string>
     <string name="powered_by_codeweb" translatable="false">Powered by CodeWeb</string>
+    <string-array name="meterType">
+        <item>Prepaid</item>
+        <item>Postpaid</item>
+    </string-array>
+    <string-array name="electricCompany">
+        <item>Distribution Company</item>
+        <item>Ikeja Electric - IKEDC</item>
+        <item>Eko Electric - EKDC</item>
+        <item>Jos Electric - JED</item>
+        <item>Ibadan Electric - IBEDC</item>
+        <item>Port-Harcourt Electric - PHEDC</item>
+        <item>Kano Electric - KEDCO</item>
+    </string-array>
+
+    <string-array name="walletAmt">
+        <item>Wallet - ₦0</item>
+        <item>ATM Card</item>
+    </string-array>
+    <string-array name="dom">
+        <item>Cable Package</item>
+    </string-array>
     <string-array name="languageItems">
         <item>Select a Language</item>
         <item>English</item>
@@ -48,6 +69,41 @@
         <item>Igbo</item>
         <item>Hausa</item>
     </string-array>
+    <string-array name="airtimeNetwork">
+        <item>Select Network</item>
+        <item>Airtel</item>
+        <item>GLO</item>
+        <item>MTN</item>
+        <item>9Mobile</item>
+    </string-array>
+    <string-array name="cableTv">
+        <item>Bouquet / Package</item>
+        <item>Dstv</item>
+        <item>Gotv</item>
+        <item>StarTimes</item>
+    </string-array>
+    <string-array name="gotvPackage">//subject to removal @osas note that
+        <item>Gotv Plus @ ₦1900</item>
+        <item>Gotv Compact @ ₦2100</item>
+        <item>Gotv Joli @ ₦2400</item>
+        <item>Gotv Mac @ ₦3200</item>
+    </string-array>
+
+    <string-array name="dstvPackage">//subject to removal @osas note that
+        <item>Dstv Plus @ ₦1900</item>
+        <item>Dstv Compact @ ₦2100</item>
+        <item>Dstv Joli @ ₦2400</item>
+        <item>Dstv Mac @ ₦3200</item>
+    </string-array>
+
+    <string-array name="starPackage">//subject to removal @osas note that
+        <item>Startimes Plus @ ₦1900</item>
+        <item>Startimes Compact @ ₦2100</item>
+        <item>Startimes Joli @ ₦2400</item>
+        <item>Startimes Mac @ ₦3200</item>
+    </string-array>
+
+
     <string name="enter_otp_code">Enter OTP Code</string>
     <string name="we_ve_sent_an_otp_to_your_number">We\'ve sent an OTP to your Number</string>
     <string name="terms_of_use">By using this app, you agree to the <u> Terms of Use </u> and <u> Privacy Policy </u>.</string>
@@ -74,5 +130,26 @@
     <string name="reference_id">Reference ID</string>
     <string name="payment_logo">payment logo</string>
     <string name="submit">Submit</string>
+    <string name="title_activity_dashboard_options">DashboardOptions</string>
+    <string name="tab_text_1">Airtime</string>
+    <string name="tab_text_2">Subscriptions</string>
+    <string name="tab_text_3">Transfer</string>
+    <string name="tab_text_4">Bulk SMS</string>
+    <string name="tab_text_5">Electric Bill</string>
+    <string name="tab_text_6">Savings</string>
+    <string name="tab_text_7">Airtime To Money</string>
+    <string name="tab_text_8">Examination E-Pin</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="wallet_amount">Wallet Amount</string>
+    <string name="buy_airtime">Buy Airtime</string>
+    <string name="card_iuc_number">Card / IUC Number</string>
+    <string name="cable_tv_subscription">Cable-TV Subscription</string>
+    <string name="pay_electricity_bill">Pay Electricity Bill</string>
+    <string name="meter_number_account_number">Meter Number / Account Number</string>
+    <string name="meter_name_account_name">Meter Name / Account Name</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="smart_card_iuc_name">Smart Card / IUC Name</string>
 
 </resources>
