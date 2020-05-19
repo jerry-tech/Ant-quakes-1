@@ -1,0 +1,13 @@
+Login
+ https://antquakes.codeweb.com.ng/API/login.php?username=@username@&password=@password@
+
+Registration
+https://antquakes.codeweb.com.ng/API/register.php?firstname=@firstname@&lastname=@lastname@&email=@email@&phone=@phone@&username=@username@&password=@password@&password1=@password1@&referral=@referral@
+
+Verify Email
+https://antquakes.codeweb.com.ng/API/register.php?action=Verify&email=@email@&otp=@otp@
+
+Forgot Password https://antquakes.codeweb.com.ng/API/lostpassword.php?usename=@usename@&email=@email@
+
+Resend OTP
+https://antquakes.codeweb.com.ng/API/register.php?action=Resend&email=@email@
