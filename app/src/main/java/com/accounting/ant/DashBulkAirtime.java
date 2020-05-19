@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
 import androidx.fragment.app.Fragment;
 
@@ -13,12 +15,12 @@ import androidx.fragment.app.Fragment;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link DashAirToMoney.OnFragmentInteractionListener} interface
+ * {@link DashBulkAirtime.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link DashAirToMoney#newInstance} factory method to
+ * Use the {@link DashBulkAirtime#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class DashAirToMoney extends Fragment {
+public class DashBulkAirtime extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -30,7 +32,7 @@ public class DashAirToMoney extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public DashAirToMoney() {
+    public DashBulkAirtime() {
         // Required empty public constructor
     }
 
@@ -40,11 +42,11 @@ public class DashAirToMoney extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment DashAirToMoney.
+     * @return A new instance of fragment DashBulkAirtime.
      */
     // TODO: Rename and change types and number of parameters
-    public static DashAirToMoney newInstance(String param1, String param2) {
-        DashAirToMoney fragment = new DashAirToMoney();
+    public static DashBulkAirtime newInstance(String param1, String param2) {
+        DashBulkAirtime fragment = new DashBulkAirtime();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -65,7 +67,41 @@ public class DashAirToMoney extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_dash_air_to_money, container, false);
+            View root =  inflater.inflate(R.layout.fragment_bulk_airtime, container, false);
+
+        //dropdown for wallet amount
+        Spinner walletSpinner = root.findViewById(R.id.walletAirtime);
+        ArrayAdapter<CharSequence> adapterWallet = ArrayAdapter.createFromResource(
+                root.getContext(),
+                R.array.walletAmt,
+                R.layout.spinner_wallet
+        );
+        adapterWallet.setDropDownViewResource(R.layout.spinner_dropdown_item);
+        walletSpinner.setAdapter(adapterWallet);
+
+        //network type
+        Spinner networkType = root.findViewById(R.id.networkTypeBulk);
+        // using the array adapter class && the array adapter public constructor which accepts three parameters to get all items
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
+                root.getContext(),//getting the application context(this);
+                R.array.airtimeNetwork,
+                R.layout.spinner_network
+        );
+        adapter.setDropDownViewResource(R.layout.spinner_dropdown_item);
+        networkType.setAdapter(adapter);
+
+
+        //airtime amount
+        Spinner amountType = root.findViewById(R.id.amountBulk);
+        ArrayAdapter<CharSequence> amountAdapter = ArrayAdapter.createFromResource(
+                root.getContext(),
+                R.array.amountCard,
+                R.layout.spinner_amount
+        );
+        amountAdapter.setDropDownViewResource(R.layout.spinner_dropdown_item);
+        amountType.setAdapter(amountAdapter);
+
+        return root;
     }
 
     // TODO: Rename method, update argument and hook method into UI event

@@ -1,14 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DashExamPin">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
-</FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/background_main"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="cursive"
+                    android:gravity="center"
+                    android:text="@string/examination_pin"
+                    android:textColor="@color/blackcolor"
+                    android:textSize="35sp" />
+
+                <Spinner
+                    android:id="@+id/walletEpin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/spinner_border"
+                    android:dropDownSelector="@color/whiteSmoke"
+                    android:paddingStart="14dp"
+                    android:paddingLeft="14dp"
+                    android:paddingTop="18dp"
+                    android:paddingEnd="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="18dp"
+                    android:popupBackground="@color/background_main" />
+
+
+                <Spinner
+                    android:id="@+id/examType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/spinner_border"
+                    android:dropDownSelector="@color/whiteSmoke"
+                    android:paddingStart="12dp"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="18dp"
+                    android:paddingEnd="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="18dp"
+                    android:popupBackground="@color/background_main" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="@string/exam_year"
+                    android:textColorHint="@color/blackcolor"
+                    android:textSize="18sp"
+                    app:hintEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/pinYear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/blackcolor"
+                        android:drawableStart="@drawable/ic_calendar_black_24dp"
+                        android:drawableLeft="@drawable/ic_calendar_black_24dp"
+                        android:drawablePadding="17dp"
+                        android:inputType="number"
+                        android:padding="18dp"
+                        android:textColor="@color/blackcolor"
+                        android:textColorHint="@color/blackcolor"
+                        android:textSize="18sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="@string/amount"
+                    android:textColorHint="@color/blackcolor"
+                    android:textSize="18sp"
+                    app:hintEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/epinAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/blackcolor"
+                        android:drawableStart="@drawable/naira"
+                        android:drawableLeft="@drawable/naira"
+                        android:text="@string/_1_500"
+                        android:drawablePadding="17dp"
+                        android:inputType="number"
+                        android:enabled="false"
+                        android:padding="18dp"
+                        android:textColor="@color/blackcolor"
+                        android:textColorHint="@color/blackcolor"
+                        android:textSize="18sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/rounded_button"
+                    android:text="@string/buy_pin"
+                    android:textColor="@color/background_main"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginTop="60dp"
+            android:padding="5dp"
+            android:text="@string/powered_by_codeweb"
+            android:textColor="@color/blackcolor"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</ScrollView>

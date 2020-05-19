@@ -40,10 +40,10 @@ public class DashboardFragment extends Fragment {
         bulkCard = root.findViewById(R.id.cardClickSms);
         //intent for Electrical Bills
         electricCard = root.findViewById(R.id.cardClickElectric);
-        //intent for savings
+        //intent for bulk airtime
         savingCard = root.findViewById(R.id.cardClickSavings);
-        //intent for Airtime to Money
-        convertCard = root.findViewById(R.id.cardClickConvert);
+        //intent for data
+        convertCard = root.findViewById(R.id.buyData);
         //intent for Examination E-pin
         pinCard = root.findViewById(R.id.cardClickExam);
 

@@ -72,6 +72,14 @@ public class DashSubscription extends Fragment implements AdapterView.OnItemSele
         // Inflate the layout for this fragment
         View root =  inflater.inflate(R.layout.fragment_dash_subscription, container, false);
 
+        Spinner walletSpinner = root.findViewById(R.id.walletAmountSub);
+        ArrayAdapter<CharSequence> adapterWallet = ArrayAdapter.createFromResource(
+                root.getContext(),
+                R.array.walletAmt,
+                R.layout.spinner_wallet
+        );
+        adapterWallet.setDropDownViewResource(R.layout.spinner_dropdown_item);
+        walletSpinner.setAdapter(adapterWallet);
 
         Spinner cableType = root.findViewById(R.id.cableType);
         packageType = root.findViewById(R.id.packageType);

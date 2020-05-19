@@ -8,12 +8,12 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.accounting.ant.DashAirToMoney;
+import com.accounting.ant.DashDataBundle;
 import com.accounting.ant.DashAirtime;
+import com.accounting.ant.DashBulkAirtime;
 import com.accounting.ant.DashBulkSms;
 import com.accounting.ant.DashElectric;
 import com.accounting.ant.DashExamPin;
-import com.accounting.ant.DashSavings;
 import com.accounting.ant.DashSubscription;
 import com.accounting.ant.DashTransfer;
 import com.accounting.ant.R;
@@ -56,10 +56,10 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
                 fragment = DashElectric.newInstance("Gotv", "Dstv");
                 break;
             case 5:
-                fragment = DashSavings.newInstance("Gotv", "Dstv");
+                fragment = DashBulkAirtime.newInstance("Gotv", "Dstv");
                 break;
             case 6:
-                fragment = DashAirToMoney.newInstance("Gotv", "Dstv");
+                fragment = DashDataBundle.newInstance("Gotv", "Dstv");
                 break;
             case 7:
                 fragment = DashExamPin.newInstance("Gotv", "Dstv");

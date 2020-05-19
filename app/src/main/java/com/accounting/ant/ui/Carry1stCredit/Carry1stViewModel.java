@@ -10,7 +10,7 @@ public class Carry1stViewModel extends ViewModel {
 
     public Carry1stViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is send fragment");
+        mText.setValue("Buy Carry1st Credit");
     }
 
     public LiveData<String> getText() {

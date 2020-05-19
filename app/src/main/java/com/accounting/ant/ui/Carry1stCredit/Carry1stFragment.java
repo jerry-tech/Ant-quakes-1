@@ -4,12 +4,12 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 import android.widget.TextView;
 
-import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.accounting.ant.R;
@@ -24,12 +24,17 @@ public class Carry1stFragment extends Fragment {
                 ViewModelProviders.of(this).get(Carry1stViewModel.class);
         View root = inflater.inflate(R.layout.fragment_carry1stcredit, container, false);
         final TextView textView = root.findViewById(R.id.text_send);
-        sendViewModel.getText().observe(this, new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
+        sendViewModel.getText().observe(this, textView::setText);
+
+        Spinner walletSpinner = root.findViewById(R.id.walletCarry);
+        ArrayAdapter<CharSequence> adapterWallet = ArrayAdapter.createFromResource(
+                root.getContext(),
+                R.array.walletAmt,
+                R.layout.spinner_wallet
+        );
+        adapterWallet.setDropDownViewResource(R.layout.spinner_dropdown_item);
+        walletSpinner.setAdapter(adapterWallet);
+
         return root;
     }
 }

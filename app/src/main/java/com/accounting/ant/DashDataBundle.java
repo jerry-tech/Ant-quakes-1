@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
 import androidx.fragment.app.Fragment;
 
@@ -13,12 +15,12 @@ import androidx.fragment.app.Fragment;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link DashSavings.OnFragmentInteractionListener} interface
+ * {@link DashDataBundle.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link DashSavings#newInstance} factory method to
+ * Use the {@link DashDataBundle#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class DashSavings extends Fragment {
+public class DashDataBundle extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -30,7 +32,7 @@ public class DashSavings extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public DashSavings() {
+    public DashDataBundle() {
         // Required empty public constructor
     }
 
@@ -40,11 +42,11 @@ public class DashSavings extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment DashSavings.
+     * @return A new instance of fragment DashDataBundle.
      */
     // TODO: Rename and change types and number of parameters
-    public static DashSavings newInstance(String param1, String param2) {
-        DashSavings fragment = new DashSavings();
+    public static DashDataBundle newInstance(String param1, String param2) {
+        DashDataBundle fragment = new DashDataBundle();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -65,7 +67,52 @@ public class DashSavings extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_dash_savings, container, false);
+        View root =  inflater.inflate(R.layout.fragment_dash_data_bundle, container, false);
+
+
+        //dropdown for wallet amount
+        Spinner walletSpinner = root.findViewById(R.id.walletData);
+        ArrayAdapter<CharSequence> adapterWallet = ArrayAdapter.createFromResource(
+                root.getContext(),
+                R.array.walletAmt,
+                R.layout.spinner_wallet
+        );
+        adapterWallet.setDropDownViewResource(R.layout.spinner_dropdown_item);
+        walletSpinner.setAdapter(adapterWallet);
+
+        //network type
+        Spinner networkType = root.findViewById(R.id.networkTypeData);
+        // using the array adapter class && the array adapter public constructor which accepts three parameters to get all items
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
+                root.getContext(),//getting the application context(this);
+                R.array.airtimeNetwork,
+                R.layout.spinner_network
+        );
+        adapter.setDropDownViewResource(R.layout.spinner_dropdown_item);
+        networkType.setAdapter(adapter);
+
+        //dropdown for dataBundle
+        Spinner dataBundle = root.findViewById(R.id.bundlePlan);
+        ArrayAdapter<CharSequence> adapterBundle = ArrayAdapter.createFromResource(
+                root.getContext(),
+                R.array.dataBundle,
+                R.layout.spinner_data
+        );
+        adapterBundle.setDropDownViewResource(R.layout.spinner_dropdown_item);
+        dataBundle.setAdapter(adapterBundle);
+
+        //for dataType
+        Spinner dataType = root.findViewById(R.id.data_type);
+        // using the array adapter class && the array adapter public constructor which accepts three parameters to get all items
+        ArrayAdapter<CharSequence> adapterType = ArrayAdapter.createFromResource(
+                root.getContext(),//getting the application context(this);
+                R.array.dataType,
+                R.layout.spinner_data
+        );
+        adapterType.setDropDownViewResource(R.layout.spinner_dropdown_item);
+        dataType.setAdapter(adapterType);
+
+        return root;
     }
 
     // TODO: Rename method, update argument and hook method into UI event
