@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <color name="colorPrimary">#EE2737</color>
     <color name="colorPrimaryDark">#BA0020</color>
     <color name="colorAccent">#643E46</color>
@@ -7,10 +7,11 @@
     <color name="regInput">#55443B</color>
     <color name="whiteSmoke">#D6D2D2</color>
     <color name="background_main">#fff</color>
-    <color name="mtrl_textinput_default_box_stroke_color">#3a2c23</color>
+    <color name="mtrl_textinput_default_box_stroke_color" tools:ignore="PrivateResource">#000</color>
     <color name="blackcolor">#000</color>
     <color name="new_Background">#EBA7A7</color>
     <color name="light_bgmain">#94B71C1C</color>
     <color name="red_bgg">#BA0020</color>
     <color name="redLight">#F8A4AE</color>
+    <color name="color_green">#33691E</color>
 </resources>

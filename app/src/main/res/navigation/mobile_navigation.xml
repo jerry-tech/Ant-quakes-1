@@ -31,10 +31,10 @@
         tools:layout="@layout/fragment_transhistory" />
 
     <fragment
-        android:id="@+id/nav_logOut"
-        android:name="com.accounting.ant.ui.Logout.LogoutFragment"
-        android:label="@string/logout"
-        tools:layout="@layout/fragment_logout" />
+        android:id="@+id/nav_agent"
+        android:name="com.accounting.ant.ui.upgrade_agent.AgentFragment"
+        android:label="@string/upgrade_to_agent"
+        tools:layout="@layout/fragment_agent" />
 
 
 </navigation>

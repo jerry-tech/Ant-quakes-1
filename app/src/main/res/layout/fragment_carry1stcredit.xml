@@ -2,6 +2,7 @@
 <androidx.core.widget.NestedScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:background="@color/colorAccent"
     android:layout_height="match_parent">
@@ -35,7 +36,7 @@
                 android:id="@+id/cardView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="20dp"
+                android:layout_margin="10dp"
                 android:background="@color/colorAccent"
                 android:elevation="30dp"
                 app:cardCornerRadius="10dp"
@@ -58,7 +59,7 @@
                         android:layout_alignParentRight="true"
                         android:layout_marginStart="20dp"
                         android:layout_marginLeft="20dp"
-                        android:layout_marginTop="20dp"
+                        android:layout_marginTop="18dp"
                         android:layout_marginEnd="20dp"
                         android:layout_marginRight="20dp"
                         android:background="@drawable/spinner_border"
@@ -79,7 +80,7 @@
                         android:layout_below="@+id/walletCarry"
                         android:layout_marginStart="20dp"
                         android:layout_marginLeft="20dp"
-                        android:layout_marginTop="20dp"
+                        android:layout_marginTop="18dp"
                         android:layout_marginEnd="20dp"
                         android:layout_marginRight="20dp"
                         android:hint="@string/carry1st_username"
@@ -94,13 +95,9 @@
                             android:backgroundTint="@color/blackcolor"
                             android:drawableStart="@drawable/person_black"
                             android:drawableLeft="@drawable/person_black"
-                            android:drawablePadding="14dp"
+                            android:drawablePadding="10dp"
                             android:inputType="text"
                             android:padding="20dp"
-                            android:paddingStart="20dp"
-                            android:paddingLeft="20dp"
-                            android:paddingEnd="20dp"
-                            android:paddingRight="20dp"
                             android:textColor="@color/blackcolor"
                             android:textColorHint="@color/blackcolor"
                             android:textSize="18sp"
@@ -116,7 +113,7 @@
                         android:layout_below="@+id/carryUser"
                         android:layout_marginStart="20dp"
                         android:layout_marginLeft="20dp"
-                        android:layout_marginTop="20dp"
+                        android:layout_marginTop="18dp"
                         android:layout_marginEnd="20dp"
                         android:layout_marginRight="20dp"
                         android:hint="@string/amount"
@@ -131,17 +128,16 @@
                             android:backgroundTint="@color/blackcolor"
                             android:drawableStart="@drawable/naira"
                             android:drawableLeft="@drawable/naira"
-                            android:drawablePadding="18dp"
+                            android:drawablePadding="14dp"
                             android:inputType="numberDecimal"
                             android:padding="25dp"
                             android:paddingStart="20dp"
                             android:paddingLeft="20dp"
-                            android:paddingEnd="20dp"
-                            android:paddingRight="20dp"
                             android:textColor="@color/blackcolor"
                             android:textColorHint="@color/blackcolor"
                             android:textSize="18sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            tools:ignore="RtlSymmetry" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -169,7 +165,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="50dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_height="wrap_content">
@@ -180,7 +176,7 @@
                 android:gravity="center"
                 android:padding="15dp"
                 android:text="@string/copyright_2020_all_rights_reserved"
-                android:textSize="16sp"
+                android:textSize="14sp"
                 android:textColor="@color/background_main"
                 />
         </LinearLayout>

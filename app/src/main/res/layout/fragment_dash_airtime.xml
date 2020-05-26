@@ -48,7 +48,7 @@
                     android:layout_marginRight="20dp"
                     android:hint="@string/wallet_amount"
                     android:textColorHint="@color/blackcolor"
-                    android:textSize="18sp"
+                   android:textSize="16sp"
                     app:hintEnabled="true">
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -63,7 +63,7 @@
                         android:padding="18dp"
                         android:textColor="@color/blackcolor"
                         android:textColorHint="@color/blackcolor"
-                        android:textSize="18sp" />
+                       android:textSize="16sp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -79,8 +79,7 @@
                     android:background="@drawable/spinner_border"
                     android:dropDownSelector="@color/whiteSmoke"
                     android:layout_marginRight="20dp"
-                    android:paddingTop="18dp"
-                    android:paddingBottom="18dp"
+                    android:padding="18dp"
                     android:paddingLeft="12dp"
                     android:paddingStart="12dp"
                     android:paddingEnd="5dp"
@@ -99,7 +98,7 @@
                     android:layout_marginRight="20dp"
                     android:hint="@string/phone_number"
                     android:textColorHint="@color/blackcolor"
-                    android:textSize="18sp"
+                   android:textSize="16sp"
                     app:hintEnabled="true">
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -114,7 +113,7 @@
                         android:padding="18dp"
                         android:textColor="@color/blackcolor"
                         android:textColorHint="@color/blackcolor"
-                        android:textSize="18sp" />
+                       android:textSize="16sp" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -128,7 +127,7 @@
                     android:layout_marginRight="20dp"
                     android:hint="@string/amount"
                     android:textColorHint="@color/blackcolor"
-                    android:textSize="18sp"
+                   android:textSize="16sp"
                     app:hintEnabled="true">
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -138,12 +137,15 @@
                         android:backgroundTint="@color/signUp"
                         android:drawableStart="@drawable/naira"
                         android:drawableLeft="@drawable/naira"
-                        android:drawablePadding="17dp"
+                        android:drawablePadding="14dp"
                         android:inputType="numberDecimal"
-                        android:padding="18dp"
+                        android:padding="25dp"
+                        android:paddingStart="20dp"
+                        android:paddingLeft="20dp"
                         android:textColor="@color/blackcolor"
                         android:textColorHint="@color/blackcolor"
-                        android:textSize="18sp" />
+                       android:textSize="16sp"
+                        tools:ignore="RtlSymmetry" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <Button
@@ -158,7 +160,7 @@
                     android:background="@drawable/rounded_button"
                     android:text="@string/buy_airtime"
                     android:textColor="@color/background_main"
-                    android:textSize="18sp" />
+                   android:textSize="16sp" />
 
 
             </LinearLayout>
@@ -168,7 +170,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="30dp"
             android:padding="5dp"
             android:text="@string/powered_by_codeweb"
             android:textColor="@color/blackcolor"

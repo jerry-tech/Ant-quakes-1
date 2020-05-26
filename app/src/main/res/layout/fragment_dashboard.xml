@@ -12,43 +12,84 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="45dp"
+            android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="20dp"
-            tools:ignore="UselessParent">
+            android:orientation="horizontal"
+            tools:ignore="UselessParent"
+            android:baselineAligned="false">
 
-            <TextView
-                android:id="@+id/text_home"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:fontFamily="cursive"
-                android:padding="12dp"
-                android:text="@string/antquakes"
-                android:textColor="@color/background_main"
-                android:textSize="40sp"
-                android:textStyle="bold"
-                tools:ignore="RelativeOverlap" />
+                android:orientation="vertical"
+                android:layout_weight="90"
+                tools:ignore="RelativeOverlap">
 
-            <ImageView
-                android:layout_width="82dp"
-                android:layout_height="82dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:contentDescription="@string/users_image"
-                android:src="@drawable/person_35dp" />
+                <TextView
+                    android:id="@+id/text_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/wallet_balance"
+                    android:textColor="@color/background_main"
+                    android:textSize="18sp"
+                    tools:ignore="RelativeOverlap" />
 
-        </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/walletamt"
+                    android:textSize="25sp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/background_main"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="100"
+                android:orientation="vertical"
+                tools:ignore="RelativeOverlap">
+                <TextView
+                    android:id="@+id/txt_commission"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/commission"
+                    android:textColor="@color/background_main"
+                    android:textSize="18sp"
+                    tools:ignore="RelativeOverlap" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/walletamt"
+                    android:textSize="25sp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/background_main"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
 
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:alignmentMode="alignMargins"
             android:columnCount="2"
-            android:columnOrderPreserved="false"
+            android:columnOrderPreserved="true"
             android:rowCount="4">
 
             <com.google.android.material.card.MaterialCardView
@@ -83,7 +124,7 @@
                         android:text="@string/airtime"
                         android:textStyle="bold"
                         android:textColor="@color/signUp"
-                        android:textSize="19sp" />
+                        android:textSize="15sp" />
 
                 </LinearLayout>
 
@@ -119,10 +160,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
                         android:textStyle="bold"
-                        
                         android:text="@string/subscription"
                         android:textColor="@color/signUp"
-                        android:textSize="19sp" />
+                        android:textSize="15sp" />
 
                 </LinearLayout>
 
@@ -158,10 +198,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
                         android:textStyle="bold"
-                        
                         android:text="@string/transfer"
                         android:textColor="@color/signUp"
-                        android:textSize="18sp" />
+                        android:textSize="15sp" />
 
                 </LinearLayout>
 
@@ -199,7 +238,7 @@
                         android:textStyle="bold"
                         android:text="@string/bulk_sms"
                         android:textColor="@color/signUp"
-                        android:textSize="18sp" />
+                        android:textSize="15sp" />
 
                 </LinearLayout>
 
@@ -238,7 +277,7 @@
                         android:textStyle="bold"
                         
                         android:textColor="@color/signUp"
-                        android:textSize="18sp" />
+                        android:textSize="15sp" />
 
                 </LinearLayout>
 
@@ -276,7 +315,7 @@
                         android:textStyle="bold"
                         android:text="@string/bulk_airtime"
                         android:textColor="@color/signUp"
-                        android:textSize="18sp" />
+                        android:textSize="15sp" />
 
                 </LinearLayout>
 
@@ -315,7 +354,7 @@
                         
                         android:text="@string/buy_databundle"
                         android:textColor="@color/signUp"
-                        android:textSize="18sp" />
+                        android:textSize="15sp" />
 
                 </LinearLayout>
 
@@ -351,10 +390,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
                         android:textStyle="bold"
-                        
                         android:text="@string/examination_e_pin"
                         android:textColor="@color/signUp"
-                        android:textSize="18sp" />
+                        android:textSize="15sp" />
 
                 </LinearLayout>
 

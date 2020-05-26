@@ -88,7 +88,7 @@
                     android:layout_marginRight="20dp"
                     android:hint="@string/meter_number_account_number"
                     android:textColorHint="@color/signUp"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     app:hintEnabled="true">
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -102,7 +102,7 @@
                         android:padding="18dp"
                         android:textColor="@color/blackcolor"
                         android:textColorHint="@color/blackcolor"
-                        android:textSize="18sp" />
+                        android:textSize="16sp" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -117,7 +117,7 @@
                     android:background="@drawable/fundwalletbg"
                     android:hint="@string/meter_name_account_name"
                     android:textColorHint="@color/signUp"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     app:hintEnabled="true">
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -132,7 +132,7 @@
                         android:textColor="@color/blackcolor"
                         android:textColorHint="@color/blackcolor"
                         android:enabled="false"
-                        android:textSize="18sp" />
+                        android:textSize="16sp" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <Spinner
@@ -167,7 +167,7 @@
                     android:background="@drawable/rounded_button"
                     android:text="@string/pay_now"
                     android:textColor="@color/background_main"
-                    android:textSize="18sp" />
+                    android:textSize="16sp" />
 
 
             </LinearLayout>
@@ -177,7 +177,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="30dp"
             android:padding="5dp"
             android:text="@string/powered_by_codeweb"
             android:textColor="@color/blackcolor"

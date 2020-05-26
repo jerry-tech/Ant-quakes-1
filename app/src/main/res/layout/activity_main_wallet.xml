@@ -11,20 +11,68 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/backDashBoard"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:adjustViewBounds="true"
+                android:onClick="gotoFund"
+                android:scaleType="centerInside"
+                android:drawableLeft="@drawable/ic_arrow_back_black_24dp"
+                tools:ignore="ContentDescription"
+                android:drawableStart="@drawable/ic_arrow_back_black_24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:textAllCaps="true"
+                android:adjustViewBounds="true"
+                android:textStyle="bold"
+                android:scaleType="centerInside"
+                android:textColor="@color/background_main"
+                android:text="@string/make_payment"
+                android:gravity="start|center"
+                android:textSize="16sp"
+                tools:ignore="ContentDescription" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:gravity="center"
-            android:padding="25dp"
+            android:padding="10dp"
             android:text="@string/make_payment"
             android:textColor="@color/background_main"
             android:textSize="30sp"
             android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+             />
 
 
         <androidx.cardview.widget.CardView
@@ -72,9 +120,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/subTxt"
-                    android:drawableStart="@drawable/person_black"
-                    android:drawableLeft="@drawable/person_black"
-                    android:drawablePadding="15dp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentEnd="true"
@@ -83,13 +128,13 @@
                     android:layout_marginStart="18dp"
                     android:layout_marginRight="18dp"
                     android:layout_marginEnd="18dp"
-                    android:layout_marginTop="13dp"
+                    android:layout_marginTop="3dp"
                     android:background="@drawable/fundwalletbg"
                     android:enabled="false"
                     android:hint="@string/first_name"
                     android:padding="17dp"
                     android:textColorHint="@color/blackcolor"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:importantForAutofill="no"
                     android:inputType="text"
                      />
@@ -106,9 +151,6 @@
                     android:layout_marginLeft="18dp"
                     android:layout_marginStart="18dp"
                     android:layout_marginRight="18dp"
-                    android:drawableStart="@drawable/person_black"
-                    android:drawableLeft="@drawable/person_black"
-                    android:drawablePadding="15dp"
                     android:layout_marginEnd="18dp"
                     android:layout_marginTop="19dp"
                     android:background="@drawable/fundwalletbg"
@@ -116,7 +158,7 @@
                     android:hint="@string/last_name"
                     android:padding="17dp"
                     android:textColorHint="@color/blackcolor"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:inputType="text"
                     android:importantForAutofill="no" />
 
@@ -134,15 +176,12 @@
                     android:layout_marginRight="18dp"
                     android:layout_marginEnd="18dp"
                     android:layout_marginTop="19dp"
-                    android:drawableStart="@drawable/email_black"
-                    android:drawableLeft="@drawable/email_black"
-                    android:drawablePadding="15dp"
                     android:background="@drawable/fundwalletbg"
                     android:enabled="false"
                     android:hint="@string/email_address"
                     android:padding="17dp"
                     android:textColorHint="@color/blackcolor"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:importantForAutofill="no"
                     android:inputType="textEmailAddress" />
 
@@ -161,15 +200,12 @@
                     android:layout_marginEnd="18dp"
                     android:layout_marginTop="19dp"
                     android:inputType="phone"
-                    android:drawableStart="@drawable/phone_black"
-                    android:drawableLeft="@drawable/phone_black"
-                    android:drawablePadding="15dp"
                     android:background="@drawable/fundwalletbg"
                     android:enabled="false"
                     android:hint="@string/phone_number"
                     android:padding="17dp"
                     android:textColorHint="@color/blackcolor"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:importantForAutofill="no" />
 
                 <EditText
@@ -188,16 +224,14 @@
                     android:layout_marginTop="19dp"
                     android:background="@drawable/fundwalletbg"
                     android:enabled="false"
-                    android:drawableLeft="@drawable/naira"
-                    android:drawablePadding="22dp"
                     android:hint="@string/amount"
                     android:padding="17dp"
                     android:textColor="@color/blackcolor"
                     android:textColorHint="@color/blackcolor"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:importantForAutofill="no"
                     android:inputType="number"
-                    android:drawableStart="@drawable/naira" />
+                    />
 
                 <EditText
                     android:id="@+id/amountRefId"
@@ -215,13 +249,10 @@
                     android:layout_marginTop="19dp"
                     android:background="@drawable/fundwalletbg"
                     android:enabled="false"
-                    android:drawableStart="@drawable/ekey_black"
-                    android:drawableLeft="@drawable/ekey_black"
-                    android:drawablePadding="15dp"
                     android:hint="@string/reference_id"
                     android:padding="17dp"
                     android:textColorHint="@color/blackcolor"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:importantForAutofill="no"
                     android:inputType="text" />
 
@@ -262,8 +293,10 @@
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="100dp"
+                        android:layout_height="80dp"
                         android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
                         android:layout_marginTop="10dp"
                         android:src="@drawable/paystack"
                         android:contentDescription="@string/payment_logo" />
@@ -279,10 +312,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="12dp"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:textColor="@color/background_main"
             android:text="@string/copyright_2020_all_rights_reserved"
-            android:gravity="center"
+            android:gravity="center|bottom"
             app:layout_constraintTop_toBottomOf="@+id/cardViewPay"
             />
 

@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginRight="10dp"
             android:background="@color/background_main"
@@ -73,10 +73,10 @@
                     android:dropDownSelector="@color/whiteSmoke"
                     android:paddingStart="12dp"
                     android:paddingLeft="12dp"
-                    android:paddingTop="18dp"
+                    android:paddingTop="20dp"
                     android:paddingEnd="5dp"
                     android:paddingRight="5dp"
-                    android:paddingBottom="18dp"
+                    android:paddingBottom="20dp"
                     android:popupBackground="@color/background_main" />
 
 
@@ -91,12 +91,12 @@
                     android:layout_marginRight="20dp"
                     android:background="@drawable/spinner_border"
                     android:dropDownSelector="@color/whiteSmoke"
-                    android:paddingStart="12dp"
-                    android:paddingLeft="12dp"
-                    android:paddingTop="18dp"
+                    android:paddingTop="19dp"
                     android:paddingEnd="5dp"
                     android:paddingRight="5dp"
-                    android:paddingBottom="18dp"
+                    android:paddingStart="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="19dp"
                     android:popupBackground="@color/background_main" />
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -150,7 +150,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="30dp"
             android:padding="5dp"
             android:text="@string/powered_by_codeweb"
             android:textColor="@color/blackcolor"
