@@ -1,5 +1,6 @@
 package com.accounting.ant;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
@@ -9,7 +10,6 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.accounting.ant.ui.main.SectionsPagerAdapter;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabLayout;
 
 public class DashboardOptions extends AppCompatActivity implements DashAirtime.OnFragmentInteractionListener,DashSubscription.OnFragmentInteractionListener,DashTransfer.OnFragmentInteractionListener, DashBulkSms.OnFragmentInteractionListener,DashElectric.OnFragmentInteractionListener, DashBulkAirtime.OnFragmentInteractionListener, DashDataBundle.OnFragmentInteractionListener,DashExamPin.OnFragmentInteractionListener{
@@ -38,8 +38,7 @@ public class DashboardOptions extends AppCompatActivity implements DashAirtime.O
         //floating action button
         FloatingActionButton fab = findViewById(R.id.fab);
         if(fragmentId != null) {
-            fab.setOnClickListener(view -> Snackbar.make(view, fragmentId, Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show());
+            fab.setOnClickListener(view -> startActivity(new Intent(this,UsersFeedback.class)));
         }
     }
 

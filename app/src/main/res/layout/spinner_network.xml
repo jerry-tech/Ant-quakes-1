@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<EditText
+<TextView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:textSize="18sp"
+    android:textSize="16sp"
     android:background="@color/background_main"
     android:textColor="@color/blackcolor"
     android:drawableLeft="@drawable/ic_satellite_black_24dp"
     android:drawablePadding="12dp"
-    android:enabled="false"
-    android:cursorVisible="false"
+    android:enabled="true"
+    android:gravity="left|center"
     android:selectAllOnFocus="false"
     android:focusable="false"
     android:clickable="false"

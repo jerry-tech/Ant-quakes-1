@@ -10,7 +10,7 @@ public class TransHistoryViewModel extends ViewModel {
 
     public TransHistoryViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is slideshow fragment");
+        mText.setValue("Wallet Balance");
     }
 
     public LiveData<String> getText() {

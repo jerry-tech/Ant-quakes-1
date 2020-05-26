@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutApplication">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/backDashBoard"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:adjustViewBounds="true"
+                android:drawableStart="@drawable/ic_arrow_back_black_24dp"
+                android:drawableLeft="@drawable/ic_arrow_back_black_24dp"
+                android:onClick="gotoDashBoard"
+                android:scaleType="centerInside"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:adjustViewBounds="true"
+                android:gravity="start|center"
+                android:scaleType="centerInside"
+                android:text="@string/about"
+                android:textAllCaps="true"
+                android:textColor="@color/background_main"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                tools:ignore="ContentDescription" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/antAndroid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:drawableLeft="@mipmap/ic_launcher"
+            android:drawablePadding="20dp"
+            android:gravity="center|end"
+            android:paddingEnd="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/antquakes_for_android"
+            android:textColor="@color/blackcolor"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@id/toolbarAbout"
+            app:layout_constraintRight_toRightOf="@id/toolbarAbout"
+            app:layout_constraintTop_toBottomOf="@id/toolbarAbout"
+            tools:ignore="RtlSymmetry"
+            android:drawableStart="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/about_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="@string/about_text"
+            android:textColor="@color/blackcolor"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@id/antAndroid"
+            app:layout_constraintRight_toRightOf="@id/antAndroid"
+            app:layout_constraintTop_toBottomOf="@id/antAndroid" />
+
+        <TextView
+            android:id="@+id/copy_right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="30dp"
+            android:text="@string/copyright_2020_all_rights_reserved"
+            android:textColor="@color/blackcolor"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@id/about_text"
+            app:layout_constraintRight_toRightOf="@id/about_text"
+            app:layout_constraintTop_toBottomOf="@+id/about_text" />
+
+        <TextView
+            android:id="@+id/teamDevelopers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="@string/idada_osas_udoh_jeremiah_and"
+            android:textColor="@color/blackcolor"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@id/copy_right"
+            app:layout_constraintRight_toRightOf="@id/copy_right"
+            app:layout_constraintTop_toBottomOf="@id/copy_right" />
+
+        <TextView
+            android:id="@+id/webLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="@string/https_www_antquakes_com_ng"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@id/teamDevelopers"
+            app:layout_constraintRight_toRightOf="@id/teamDevelopers"
+            app:layout_constraintTop_toBottomOf="@id/teamDevelopers" />
+
+        <TextView
+            android:id="@+id/feedbackMech"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="gotoFeedBack"
+            android:padding="20dp"
+            android:text="@string/feedback_mechanism"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@id/webLink"
+            app:layout_constraintRight_toRightOf="@id/webLink"
+            app:layout_constraintTop_toBottomOf="@id/webLink" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="@string/powered_by_codeweb"
+            android:textColor="@color/blackcolor"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@id/feedbackMech"
+            app:layout_constraintRight_toRightOf="@id/feedbackMech"
+            app:layout_constraintTop_toBottomOf="@id/feedbackMech" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

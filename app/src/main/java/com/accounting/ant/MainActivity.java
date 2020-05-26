@@ -37,9 +37,8 @@ public class MainActivity extends AppCompatActivity {
 
 	ProgressDialog progressDialog;
 	TextInputEditText username, password;
-	Button loginBtn, forgotPass;
-
-	TextView footerTime;
+	Button loginBtn;
+	TextView footerTime,forgotPass;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -147,12 +146,12 @@ public class MainActivity extends AppCompatActivity {
 		Intent intent = new Intent(this, Registration.class);
 		startActivity(intent);
 
-		overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left                  );
+		overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
 	}
 
 	//Intent for forgot password
 	public void btnForgotPass() {
-		Intent intent = new Intent(this, UserOptions.class);
+		Intent intent = new Intent(this, ForgotPassword.class);
 		startActivity(intent);
 	}
 }

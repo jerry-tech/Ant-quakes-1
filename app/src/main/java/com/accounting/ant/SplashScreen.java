@@ -6,10 +6,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
-import android.widget.Spinner;
 import android.widget.TextView;
 
 import androidx.annotation.RequiresApi;
@@ -33,21 +31,10 @@ public class SplashScreen extends AppCompatActivity{
         setContentView(R.layout.activity_splash_screen);
 
         //getting the (id) of the spinner from the xml
-        Spinner language = findViewById(R.id.selectLanguage);
         progressBar = findViewById(R.id.loading_spinner);//NOT USED FOR nada!
         textBelow = findViewById(R.id.dialCodeWeb);
         imgLogo = findViewById(R.id.splashLogo);
 
-        // using the array adapter class && the array adapter public constructor which accepts three parameters to get all items
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
-                this,
-                R.array.languageItems,
-                R.layout.spinner_item
-        );
-
-        adapter.setDropDownViewResource(R.layout.spinner_dropdown_item);
-        language.setAdapter(adapter);
-//        language.setOnItemSelectedListener(this);
 
 
         //loading the animation from the anim folder and assigning it

@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
@@ -38,6 +40,7 @@ public class AuthOtp extends AppCompatActivity {
 	EditText otpone, otptwo, otpthree, otpfour, otpfive, otpsix;
 	TextView countdown;
 	Button verify;
+	TextWatcher textWatcherOne = null,textWatcherTwo = null,textWatcherThree = null,textWatcherFour = null,textWatcherFive = null;
 
 	//Creating the shared preference
 	SharedPreferences preferences;
@@ -80,6 +83,106 @@ public class AuthOtp extends AppCompatActivity {
 		otpsix = findViewById(R.id.OtpSix);
 		verify = findViewById(R.id.verify);
 
+
+		//text watcher for the first input field
+		textWatcherOne = new TextWatcher() {
+			@Override
+			public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+			}
+
+			@Override
+			public void onTextChanged(CharSequence s, int start, int before, int count) {
+				otptwo.requestFocus();
+			}
+
+			@Override
+			public void afterTextChanged(Editable s) {
+
+			}
+
+		};
+		otpone.addTextChangedListener(textWatcherOne);
+
+		//text watcher for the second input field
+		textWatcherTwo = new TextWatcher() {
+			@Override
+			public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+			}
+
+			@Override
+			public void onTextChanged(CharSequence s, int start, int before, int count) {
+				otpthree.requestFocus();
+			}
+
+			@Override
+			public void afterTextChanged(Editable s) {
+
+			}
+
+		};
+		otptwo.addTextChangedListener(textWatcherTwo);
+
+		//text watcher for the third input field
+		textWatcherThree = new TextWatcher() {
+			@Override
+			public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+			}
+
+			@Override
+			public void onTextChanged(CharSequence s, int start, int before, int count) {
+				otpfour.requestFocus();
+			}
+
+			@Override
+			public void afterTextChanged(Editable s) {
+
+			}
+
+		};
+		otpthree.addTextChangedListener(textWatcherThree);
+
+		//text watcher for the fourth input field
+		textWatcherFour = new TextWatcher() {
+			@Override
+			public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+			}
+
+			@Override
+			public void onTextChanged(CharSequence s, int start, int before, int count) {
+				otpfive.requestFocus();
+			}
+
+			@Override
+			public void afterTextChanged(Editable s) {
+
+			}
+
+		};
+		otpfour.addTextChangedListener(textWatcherFour);
+
+		//text watcher for the fifth input field
+		textWatcherFive = new TextWatcher() {
+			@Override
+			public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+			}
+
+			@Override
+			public void onTextChanged(CharSequence s, int start, int before, int count) {
+				otpsix.requestFocus();
+			}
+
+			@Override
+			public void afterTextChanged(Editable s) {
+
+			}
+
+		};
+		otpfive.addTextChangedListener(textWatcherFive);
 
 		//Getting the value of the countdown timer
 		countdown = findViewById(R.id.timer_otp);

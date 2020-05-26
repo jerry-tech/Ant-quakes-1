@@ -22,9 +22,9 @@
             android:title="@string/transaction_history"
             />
         <item
-            android:id="@+id/nav_logOut"
-            android:icon="@drawable/logout"
-            android:title="@string/logout" />
+            android:id="@+id/nav_agent"
+            android:icon="@drawable/drawable_upgrade"
+            android:title="@string/upgrade_to_agent" />
     </group>
 
 </menu>

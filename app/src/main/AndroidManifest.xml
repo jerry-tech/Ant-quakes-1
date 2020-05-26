@@ -12,11 +12,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".AboutApplication" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".UsersFeedback"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UsersProfile"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".DashboardOptions"
             android:label="@string/title_activity_dashboard_options"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".MainWallet" />
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainWallet"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".UserOptions"
             android:label="@string/title_activity_user_options"

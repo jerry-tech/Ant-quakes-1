@@ -11,7 +11,6 @@
     <string name="username">Username</string>
     <string name="email_address">Email Address</string>
     <string name="password">Password</string>
-    <string name="confirm_password">Confirm Password</string>
     <string name="register">Register</string>
     <string name="phone_number">Phone Number</string>
     <string name="_234" translatable="false">+234</string>
@@ -26,12 +25,12 @@
     <string name="otp_number">We\'ve sent an OTP to your number</string>
     <string name="reset_password">Reset Password</string>
     <string name="back_login"><u>Back to login</u></string>
-    <string name="forgot_password">Forgot Password</string>
+    <string name="forgot_password"><u>Forgot Password ?</u></string>
     <string name="referral_id">Referral Id</string>
     <string name="users_image">Users Image</string>
     <string name="airtime_logo" translatable="false">airtime logo</string>
-    <string name="airtime">Airtime</string>
-    <string name="subscription">Subscription</string>
+    <string name="airtime">Buy Airtime</string>
+    <string name="subscription">TV-Subscription</string>
     <string name="transfer">Transfer</string>
     <string name="bulk_sms">Bulk SMS</string>
     <string name="electric_bill">Electric Bill</string>
@@ -65,14 +64,6 @@
     </string-array>
     <string-array name="dom">
         <item>Cable Package</item>
-    </string-array>
-    <string-array name="languageItems">
-        <item>Select a Language</item>
-        <item>English</item>
-        <item>French</item>
-        <item>Yoruba</item>
-        <item>Igbo</item>
-        <item>Hausa</item>
     </string-array>
     <string-array name="airtimeNetwork">
         <item>Select Network</item>
@@ -127,6 +118,16 @@
         <item>Startimes Mac @ ₦3200</item>
     </string-array>
 
+    <string-array name="upgradePlan">//don\'t remove its essential
+        <item>Select a Plan</item>
+        <item>Basic @ ₦3,000</item>
+        <item>Reseller @ ₦10,000</item>
+        <item>Agent @ ₦30,000</item>
+    </string-array>
+
+    <string-array name="currentPlan">//don\'t remove its essential
+        <item>Free Plan</item>
+    </string-array>
 
     <string name="enter_otp_code">Enter OTP Code</string>
     <string name="we_ve_sent_an_otp_to_your_number">We\'ve sent an OTP to your Number</string>
@@ -171,8 +172,8 @@
     <string name="card_iuc_number">Card / IUC Number</string>
     <string name="cable_tv_subscription">Cable-TV Subscription</string>
     <string name="pay_electricity_bill">Pay Electricity Bill</string>
-    <string name="meter_number_account_number">Meter Number / Account Number</string>
-    <string name="meter_name_account_name">Meter Name / Account Name</string>
+    <string name="meter_number_account_number">Meter / Account Number</string>
+    <string name="meter_name_account_name">Meter / Account Name</string>
     <string name="pay_now">Pay Now</string>
     <string name="smart_card_iuc_name">Smart Card / IUC Name</string>
     <string name="send_sms">Send SMS</string>
@@ -193,5 +194,57 @@
     <string name="buy_pin">Buy Pin</string>
     <string name="carry1st_username">Carry1st Username</string>
     <string name="buy_credit">Buy Credit</string>
-
+    <string name="upgrade_to_agent">Upgrade to Agent</string>
+    <string name="profile">Profile</string>
+    <string name="about">About</string>
+    <string name="upgrade_account">Upgrade Account</string>
+    <string name="upgrade">Upgrade</string>
+    <string name="don_t_have_an_account"><u>Don\'t have an account ?</u></string>
+    <string name="wallet_balance">Wallet Balance</string>
+    <string name="walletamt">₦1,500</string>
+    <string name="commission">Commission</string>
+    <string name="udoh_jeremiah">Udoh Jeremiah</string>
+    <string name="completed">Completed</string>
+    <string name="wallet_balance_1_500">Wallet Balance: ₦1,500</string>
+    <string name="payment_option_wallet">Payment Option: Wallet</string>
+    <string name="we_can_t_notify_you_of_antquakes_promotions_if_you_do">Are you sure you want to log out ? \n We can\'t notify you of Antquakes \n promotions if you do.</string>
+    <string name="cancel">Cancel</string>
+    <string name="active">Active</string>
+    <string name="change_password">Change Password</string>
+    <string name="account_status">Account Status</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="show_password">Show Password</string>
+    <string name="hide_pass">Hide Password</string>
+    <string name="already_have_an_account">Already Have an account ?</string>
+    <string name="complaint_response">Thank you for contacting us. We \n soon look into the matter.</string>
+    <string name="lodge_complaint">Lodge </string>
+    <string name="complaint_submitted">Complaint Submitted</string>
+    <string name="complaint">Support</string>
+    <string name="support_mechanism">Support Mechanism</string>
+    <string name="name">Name</string>
+    <string name="complaint_details">Help &amp; FeedBack</string>
+    <string name="support_description">Describe your issue or Feedback</string>
+    <string name="dashboard_options">DashBoard Options</string>
+    <string name="antquakes_for_android">AntQuakes for Android</string>
+    <string name="about_text">AntQuakes for Android is an app were you get all your service at a go, and Manage all your customer support in one place.</string>
+    <string name="idada_osas_udoh_jeremiah_and"><u>Osaigbovo James Idada</u>, <u>Jeremiah Udoh</u> and <u>CodeWeb Developers</u></string>
+    <string name="https_www_antquakes_com_ng"><u>https://www.antquakes.com.ng</u></string>
+    <string name="feedback_mechanism"><u>FeedBack Mechanism</u></string>
+    <string-array name="support_type">
+        <item>Support Type</item>
+        <item>Lodge FeedBack</item>
+        <item>Lodge Help</item>
+    </string-array>
+    <string-array name="history_view">//subject to removal
+        <item>63499443</item>//Referral id
+        <item>5/21/2020 7:56:09 AM</item>//DATE TIME
+        <item>Description: 100 airtime</item>
+        <item>Recipient: 07017525242</item>
+        <item>Amount: ₦100</item>
+        <item>Payment Option: Wallet</item>
+        <item>Wallet Balance: ₦1,500</item>
+        <item>Completed</item>//transaction status
+    </string-array>
 </resources>
