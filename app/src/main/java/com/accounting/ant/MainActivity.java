@@ -95,6 +95,7 @@ public class MainActivity extends AppCompatActivity {
 					preferences = getSharedPreferences("user_details", Context.MODE_PRIVATE);
 					editor = preferences.edit();
 					editor.putString("username", username);
+					editor.putString("password", password);
 					editor.apply();
 
 					//Moving to the registration page.

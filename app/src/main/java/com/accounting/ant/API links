@@ -11,3 +11,21 @@ Forgot Password https://antquakes.codeweb.com.ng/API/lostpassword.php?usename=@u
 
 Resend OTP
 https://antquakes.codeweb.com.ng/API/register.php?action=Resend&email=@email@
+
+Airtime API
+
+Network
+https://antquakes.codeweb.com.ng/API/services/network.php
+
+Buy Airtime
+https://antquakes.codeweb.com.ng/API/airtime.php?usename=@username@&password=@password@&network=@network@&number=@number@&amount=@amount@
+
+Balance
+https://antquakes.codeweb.com.ng/API/services/balance.php?username=@username@&password=@password@
+{ "type": "success", "Wallet": "1000.00", "Commssion": "1000.00" }
+
+Dataplan
+https://antquakes.codeweb.com.ng/API/services/databundle.php?username=@username@&network=@network@
+
+Buy Databundle
+https://antquakes.codeweb.com.ng/API/databundle.php?usename=@username@&password=@password@&network=@network@&number=@number@&bundle=@bundle@
