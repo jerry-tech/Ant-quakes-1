@@ -1,0 +1,5 @@
+************************TODO******************
+THINGS TO DO ON THE PROJECT
+
+*The Dashairtime.java needs to have the wallet populated from SharedPreferences and the API and not by the Users
+*The AuthOtp.java needs the count down timer to stop after 3 loops.

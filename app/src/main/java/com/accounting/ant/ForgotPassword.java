@@ -1,7 +1,6 @@
 package com.accounting.ant;
 
 import android.app.ProgressDialog;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -124,6 +123,7 @@ public class ForgotPassword extends AppCompatActivity {
 	public void backToLogin() {
 		Intent intent = new Intent(ForgotPassword.this, MainActivity.class);
 		startActivity(intent);
+		finish();
 	}
 
 	//ProgressDialog Logic
