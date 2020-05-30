@@ -18,6 +18,8 @@ import com.accounting.ant.MainWallet;
 import com.accounting.ant.R;
 import com.google.android.material.textfield.TextInputEditText;
 
+import es.dmoral.toasty.Toasty;
+
 public class FundWalletFragment extends Fragment {
 
     private FundWalletViewModel galleryViewModel;
@@ -41,9 +43,9 @@ public class FundWalletFragment extends Fragment {
             String txtAmount = textInputAmount.getText().toString().trim();
             if (txtAmount.isEmpty()) {
                 // Creating a Toast notification/message which is a little diff from the implementation in an activity
-                Toast toast = Toast.makeText(
+                Toast toast = Toasty.custom(
                     //getActivity(),"Custom Toast From Fragment",Toast.LENGTH_LONG
-                    getActivity().getApplicationContext(), "Fund Wallet Amount Cannot be Empty", Toast.LENGTH_LONG
+                    getActivity().getApplicationContext(), "Fund Wallet Amount Cannot be Empty", R.drawable.warning_24dp,R.color.colorPrimary, Toast.LENGTH_LONG,true,true
                 );
                 // Set the Toast display position layout center
                 toast.setGravity(Gravity.CENTER, 0, 0);

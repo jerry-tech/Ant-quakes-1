@@ -4,8 +4,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.Spinner;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -26,14 +24,7 @@ public class Carry1stFragment extends Fragment {
         final TextView textView = root.findViewById(R.id.text_send);
         sendViewModel.getText().observe(this, textView::setText);
 
-        Spinner walletSpinner = root.findViewById(R.id.walletCarry);
-        ArrayAdapter<CharSequence> adapterWallet = ArrayAdapter.createFromResource(
-                root.getContext(),
-                R.array.walletAmt,
-                R.layout.spinner_wallet
-        );
-        adapterWallet.setDropDownViewResource(R.layout.spinner_dropdown_item);
-        walletSpinner.setAdapter(adapterWallet);
+
 
         return root;
     }

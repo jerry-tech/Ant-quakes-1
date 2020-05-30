@@ -1,5 +1,10 @@
 ************************TODO******************
 THINGS TO DO ON THE PROJECT
 
-*The Dashairtime.java needs to have the wallet populated from SharedPreferences and the API and not by the Users
+*The Dashairtime.java needs to have the wallet populated from SharedPreferences and the API and not by the Users (corrected it)
 *The AuthOtp.java needs the count down timer to stop after 3 loops.
+
+####Jerry
+*Exception errors should be show in a more user friendly response.
+*registration page email verification has issues keep saying email has been used when it my first time of creating an account
+*when writing error messages don't use / use or

@@ -69,15 +69,6 @@ public class DashBulkAirtime extends Fragment {
         // Inflate the layout for this fragment
             View root =  inflater.inflate(R.layout.fragment_bulk_airtime, container, false);
 
-        //dropdown for wallet amount
-        Spinner walletSpinner = root.findViewById(R.id.walletAirtime);
-        ArrayAdapter<CharSequence> adapterWallet = ArrayAdapter.createFromResource(
-                root.getContext(),
-                R.array.walletAmt,
-                R.layout.spinner_wallet
-        );
-        adapterWallet.setDropDownViewResource(R.layout.spinner_dropdown_item);
-        walletSpinner.setAdapter(adapterWallet);
 
         //network type
         Spinner networkType = root.findViewById(R.id.networkTypeBulk);

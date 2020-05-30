@@ -20,6 +20,8 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
+import es.dmoral.toasty.Toasty;
+
 public class ForgotPassword extends AppCompatActivity {
 	//Getting the URL for the API
 	private static final String TAG = "ForgotPasswordActivity";
@@ -81,7 +83,7 @@ public class ForgotPassword extends AppCompatActivity {
 				boolean error = jObj.getBoolean("error");
 
 				if (!error) {
-					Toast.makeText(getApplicationContext(), jObj.getString("text"), Toast.LENGTH_SHORT).show();
+					Toasty.success(getApplicationContext(), jObj.getString("text"), Toast.LENGTH_SHORT,true).show();
 
 					// Launch login activity
 					Intent intent = new Intent(this, MainActivity.class);
@@ -91,8 +93,8 @@ public class ForgotPassword extends AppCompatActivity {
 				} else {
 
 					String errorMsg = jObj.getString("text");
-					Toast.makeText(getApplicationContext(),
-							errorMsg, Toast.LENGTH_LONG).show();
+					Toasty.custom(getApplicationContext(),
+							errorMsg,R.drawable.close_24dp,R.color.colorPrimary, Toast.LENGTH_LONG,true,true).show();
 				}
 			} catch (JSONException e) {
 				e.printStackTrace();
@@ -100,8 +102,8 @@ public class ForgotPassword extends AppCompatActivity {
 
 		}, error -> {
 			Log.e(TAG, "ForgotPassword Error: " + error.getMessage());
-			Toast.makeText(getApplicationContext(),
-					error.getMessage(), Toast.LENGTH_LONG).show();
+			Toasty.custom(getApplicationContext(),
+					error.getMessage(), R.drawable.close_24dp,R.color.colorPrimary, Toast.LENGTH_LONG,true,true).show();
 			hideDialog();
 		}) {
 			@Override

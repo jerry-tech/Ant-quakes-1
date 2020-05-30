@@ -13,6 +13,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import es.dmoral.toasty.Toasty;
+
 public class UsersFeedback extends AppCompatActivity {
 
     Dialog dialogResponse;
@@ -57,7 +59,7 @@ public class UsersFeedback extends AppCompatActivity {
                 }else if(selectedText.equalsIgnoreCase("Lodge Help")){
                     complaintBtn.setOnClickListener(v -> showComplaintDialog(help,messHelp));
                 }else
-                    Toast.makeText(getApplicationContext(), "Select Support Type Before Lodging Help Or FeedBack", Toast.LENGTH_LONG).show();
+                    Toasty.custom(getApplicationContext(), "Select Support Type Before Lodging Help Or FeedBack", R.drawable.info_24dp,R.color.colorAccent, Toast.LENGTH_LONG,true,true).show();
             }
 
             @Override

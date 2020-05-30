@@ -14,8 +14,6 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.accounting.ant.R;
 
-import java.util.Objects;
-
 public class AgentFragment extends Fragment {
 
     private AgentViewModel toolsViewModel;
@@ -28,15 +26,6 @@ public class AgentFragment extends Fragment {
         final TextView textView = root.findViewById(R.id.text_tools);
         toolsViewModel.getText().observe(this, textView::setText);
 
-        //spinner dropdown for wallet amount
-        Spinner walletAmount = root.findViewById(R.id.walletAgent);
-        ArrayAdapter adapter = ArrayAdapter.createFromResource(
-                Objects.requireNonNull(getContext()),
-                R.array.walletAmt,
-                R.layout.spinner_wallet
-        );
-        adapter.setDropDownViewResource(R.layout.spinner_dropdown_item);
-        walletAmount.setAdapter(adapter);
 
         //spinner dropdown for UpgradePlan
         Spinner upgrade = root.findViewById(R.id.upgradePlan);
