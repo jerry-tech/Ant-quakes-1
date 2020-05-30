@@ -69,9 +69,9 @@ public class DashAirtime extends Fragment {
 	CharSequence text;
 
 	//Creating the shared preference
-	SharedPreferences preferences;
+	SharedPreferences preferences, walletPreference;
 	//Getting Usernaqme and password
-	String username, password;
+	String username, password, walletbalance;
 
 
 	private OnFragmentInteractionListener mListener;
@@ -207,11 +207,15 @@ public class DashAirtime extends Fragment {
 		//Button to buy airtime.
 		buyAirtime = root.findViewById(R.id.buyAirtime);
 
-		//Getting the email of the user with shared preference.
+		//Getting the userdetails with shared preference.
 		preferences = getActivity().getSharedPreferences("user_details", Context.MODE_PRIVATE);
 		username = preferences.getString("username", null);
 		password = preferences.getString("password", null);
 
+
+		//Getting the wallet balance with shared preference.
+		walletPreference = getActivity().getSharedPreferences("walletDetails", Context.MODE_PRIVATE);
+		walletbalance = walletPreference.getString("wallet",null);
 
 		// Progress dialog
 		progressDialog = new ProgressDialog(root.getContext());
@@ -220,6 +224,8 @@ public class DashAirtime extends Fragment {
 		//Triggering the event to buy airtime.
 		buyAirtime.setOnClickListener(e -> buyAirtimeClick(username, password, walletAmount.getText().toString(), text, walletPhone.getText().toString(), walletQuant.getText().toString()));
 
+		//Adding the amount in the to the UI.
+		walletAmount.setText("#"+walletbalance);
 
 		// Inflate the layout for this fragment
 		return root;
