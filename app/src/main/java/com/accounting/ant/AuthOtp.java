@@ -25,6 +25,8 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
+import es.dmoral.toasty.Toasty;
+
 
 public class AuthOtp extends AppCompatActivity {
 	//Getting the URL for the API
@@ -229,7 +231,7 @@ public class AuthOtp extends AppCompatActivity {
 	//Method to check for empty OTP
 	private void emptyChecker(String one, String two, String three, String four, String five, String six) {
 		if (one.equals("") || two.equals("") || three.equals("") || four.equals("") || five.equals("") || six.equals("")) {
-			Toast.makeText(this, "You can not have an empty OTP!", Toast.LENGTH_SHORT).show();
+			Toasty.custom(this, "You can not have an empty OTP!", R.drawable.warning_24dp,R.color.colorPrimary, Toast.LENGTH_LONG,true,true).show();
 		} else {
 			verify(action, email, otpone.getText().toString() + otptwo.getText().toString() + otpthree.getText().toString() + otpfour.getText().toString()
 					+ otpfive.getText().toString() + otpsix.getText().toString()
@@ -256,7 +258,7 @@ public class AuthOtp extends AppCompatActivity {
 				boolean error = jObj.getBoolean("error");
 
 				if (!error) {
-					Toast.makeText(getApplicationContext(), "Hi " + email + ", Your account has been verified!", Toast.LENGTH_SHORT).show();
+					Toasty.success(getApplicationContext(), "Hi " + email + ", Your account has been verified!", Toast.LENGTH_SHORT, true).show();
 					//Stopping the countdown timer if OTP is correct
 					countDownTimer.cancel();
 
@@ -268,8 +270,8 @@ public class AuthOtp extends AppCompatActivity {
 				} else {
 
 					String errorMsg = jObj.getString("text");
-					Toast.makeText(getApplicationContext(),
-							errorMsg, Toast.LENGTH_LONG).show();
+					Toasty.custom(getApplicationContext(),
+							errorMsg, R.drawable.close_24dp,R.color.colorPrimary, Toast.LENGTH_LONG,true,true).show();
 				}
 			} catch (JSONException e) {
 				e.printStackTrace();
@@ -277,8 +279,8 @@ public class AuthOtp extends AppCompatActivity {
 
 		}, error -> {
 			Log.e(TAG, "Verification Error: " + error.getMessage());
-			Toast.makeText(getApplicationContext(),
-					error.getMessage(), Toast.LENGTH_LONG).show();
+			Toasty.custom(getApplicationContext(),
+					error.getMessage(),R.drawable.close_24dp,R.color.colorPrimary, Toast.LENGTH_LONG,true,true).show();
 			hideDialog();
 		}) {
 			@Override
@@ -317,10 +319,10 @@ public class AuthOtp extends AppCompatActivity {
 				String message = jObj.getString("text");
 
 				if (!error) {
-					Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
+					Toasty.success(getApplicationContext(), message, Toast.LENGTH_SHORT,true).show();
 
 				} else {
-					Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
+					Toasty.custom(getApplicationContext(), message, R.drawable.close_24dp,R.color.colorPrimary, Toast.LENGTH_LONG,true,true).show();
 				}
 			} catch (JSONException e) {
 				e.printStackTrace();
@@ -328,8 +330,8 @@ public class AuthOtp extends AppCompatActivity {
 
 		}, error -> {
 			Log.e(TAG, "Resending OTP Error: " + error.getMessage());
-			Toast.makeText(getApplicationContext(),
-					error.getMessage(), Toast.LENGTH_LONG).show();
+			Toasty.custom(getApplicationContext(),
+					error.getMessage(), R.drawable.close_24dp,R.color.colorPrimary, Toast.LENGTH_LONG,true,true).show();
 			hideDialog();
 		}) {
 			@Override

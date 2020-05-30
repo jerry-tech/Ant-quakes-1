@@ -44,6 +44,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="20dp"
+                    android:background="@drawable/spinner_wallet"
                     android:layout_marginEnd="20dp"
                     android:layout_marginRight="20dp"
                     android:hint="@string/wallet_amount"
@@ -61,6 +62,8 @@
                         android:drawablePadding="14dp"
                         android:inputType="text"
                         android:padding="18dp"
+                        android:enabled="false"
+                        android:focusable="false"
                         android:textColor="@color/blackcolor"
                         android:textColorHint="@color/blackcolor"
                        android:textSize="16sp" />

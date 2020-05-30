@@ -49,29 +49,43 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <Spinner
-                        android:id="@+id/walletAgent"
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/walletUpCont"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentTop="true"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentRight="true"
                         android:layout_marginStart="20dp"
                         android:layout_marginLeft="20dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
                         android:layout_marginTop="20dp"
+                        android:background="@drawable/spinner_wallet"
                         android:layout_marginEnd="20dp"
                         android:layout_marginRight="20dp"
-                        android:background="@drawable/spinner_border"
-                        android:dropDownSelector="@color/whiteSmoke"
-                        android:paddingStart="14dp"
-                        android:paddingLeft="14dp"
-                        android:paddingTop="18dp"
-                        android:paddingEnd="5dp"
-                        android:paddingRight="5dp"
-                        android:paddingBottom="18dp"
-                        android:popupBackground="@color/background_main" />
+                        android:hint="@string/wallet_amount"
+                        android:textColorHint="@color/blackcolor"
+                        android:textSize="16sp"
+                        app:hintEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/walletAgent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/blackcolor"
+                            android:drawableStart="@drawable/ic_account_balance_wallet_black_24dp"
+                            android:drawableLeft="@drawable/ic_account_balance_wallet_black_24dp"
+                            android:drawablePadding="14dp"
+                            android:enabled="false"
+                            android:focusable="false"
+                            android:inputType="text"
+                            android:padding="18dp"
+                            android:textColor="@color/blackcolor"
+                            android:textColorHint="@color/blackcolor"
+                            android:textSize="16sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
 
                     <Spinner
                         android:id="@+id/currentPlan"
@@ -80,8 +94,10 @@
                         android:layout_marginStart="20dp"
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="20dp"
-                        android:layout_below="@+id/walletAgent"
+                        android:layout_below="@+id/walletUpCont"
                         android:layout_marginEnd="20dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
                         android:layout_marginRight="20dp"
                         android:background="@drawable/spinner_border"
                         android:dropDownSelector="@color/whiteSmoke"
@@ -107,6 +123,8 @@
                         android:dropDownSelector="@color/whiteSmoke"
                         android:paddingStart="14dp"
                         android:paddingLeft="14dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
                         android:paddingTop="18dp"
                         android:paddingEnd="5dp"
                         android:paddingRight="5dp"

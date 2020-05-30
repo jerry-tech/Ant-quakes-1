@@ -23,6 +23,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.regex.Pattern;
 
+import es.dmoral.toasty.Toasty;
+
 public class Registration extends AppCompatActivity {
 	//Getting the URL for the API
 	private static final String TAG = "RegisterActivity";
@@ -88,7 +90,7 @@ public class Registration extends AppCompatActivity {
 					username.getText().toString(), password.getText().toString(), verify_password.getText().toString(), refID.getText().toString()
 			);
 		} else {
-			Toast.makeText(this, "Country Code / Phone number is wrong!", Toast.LENGTH_SHORT).show();
+			Toasty.custom(this, "Country Code or Phone number is wrong!", R.drawable.close_24dp, R.color.colorPrimary, Toast.LENGTH_LONG, true, true).show();
 		}
 
 	}
@@ -112,7 +114,7 @@ public class Registration extends AppCompatActivity {
 				boolean error = jObj.getBoolean("error");
 
 				if (!error) {
-					Toast.makeText(getApplicationContext(), "Hi " + username + ", Your account has been created!", Toast.LENGTH_SHORT).show();
+					Toasty.success(getApplicationContext(), "Hi " + username + ", Your account has been created!", Toast.LENGTH_SHORT, true).show();
 					//Using Shared preferences.
 					preferences = getSharedPreferences("user_details", Context.MODE_PRIVATE);
 					editor = preferences.edit();
@@ -128,8 +130,8 @@ public class Registration extends AppCompatActivity {
 				} else {
 
 					String errorMsg = jObj.getString("text");
-					Toast.makeText(getApplicationContext(),
-							errorMsg, Toast.LENGTH_LONG).show();
+					Toasty.custom(getApplicationContext(),
+							errorMsg, R.drawable.close_24dp, R.color.colorPrimary, Toast.LENGTH_LONG, true, true).show();
 				}
 			} catch (JSONException e) {
 				e.printStackTrace();
@@ -137,8 +139,8 @@ public class Registration extends AppCompatActivity {
 
 		}, error -> {
 			Log.e(TAG, "Registration Error: " + error.getMessage());
-			Toast.makeText(getApplicationContext(),
-					error.getMessage(), Toast.LENGTH_LONG).show();
+			Toasty.custom(getApplicationContext(),
+					error.getMessage(), R.drawable.close_24dp, R.color.colorPrimary, Toast.LENGTH_LONG, true, true).show();
 			hideDialog();
 		}) {
 			@Override
