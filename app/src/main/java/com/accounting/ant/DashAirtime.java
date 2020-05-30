@@ -2,6 +2,7 @@ package com.accounting.ant;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
@@ -185,8 +186,9 @@ public class DashAirtime extends Fragment {
 				text = selected;
 				int duration = Toast.LENGTH_SHORT;
 
-				Toast toast = Toast.makeText(context, text, duration);
-				toast.show();
+				//Showing the selected network.
+//				Toast toast = Toast.makeText(context, text, duration);
+//				toast.show();
 
 			}
 
@@ -248,7 +250,11 @@ public class DashAirtime extends Fragment {
 
 						//Logic for correct airtime purchase
 						if (!error) {
-							Toast.makeText(getActivity().getApplicationContext(), "The wallet amount is " + walletAmnt + " The network is " + network + " the number is " + number + " the amount is " + amount, Toast.LENGTH_SHORT).show();
+							Toast.makeText(getActivity().getApplicationContext(), "Purchased Successfully.", Toast.LENGTH_SHORT).show();
+							Intent intent = new Intent(getContext(), UserOptions.class);
+							startActivity(intent);
+							getActivity().finish();
+
 
 						} else {
 
