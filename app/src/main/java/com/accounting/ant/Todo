@@ -8,3 +8,6 @@ THINGS TO DO ON THE PROJECT
 *Exception errors should be show in a more user friendly response.
 *registration page email verification has issues keep saying email has been used when it my first time of creating an account
 *when writing error messages don't use / use or
+
+#####OSAS
+Toast message not showing on all activties.
