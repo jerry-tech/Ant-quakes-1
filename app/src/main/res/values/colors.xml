@@ -5,7 +5,7 @@
     <color name="colorAccent">#643E46</color>
     <color name="signUp">#3a2c23</color>
     <color name="regInput">#55443B</color>
-    <color name="whiteSmoke">#D6D2D2</color>
+    <color name="whiteSmoke">#ECEBEB</color>
     <color name="background_main">#fff</color>
     <color name="mtrl_textinput_default_box_stroke_color" tools:ignore="PrivateResource">#000</color>
     <color name="blackcolor">#000</color>

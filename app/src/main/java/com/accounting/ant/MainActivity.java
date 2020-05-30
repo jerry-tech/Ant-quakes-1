@@ -24,6 +24,8 @@ import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
 
+import es.dmoral.toasty.Toasty;
+
 public class MainActivity extends AppCompatActivity {
 	//Using Shared preferences.
 	SharedPreferences preferences;
@@ -105,8 +107,8 @@ public class MainActivity extends AppCompatActivity {
 				} else {
 
 					String errorMsg = jObj.getString("text");
-					Toast.makeText(getApplicationContext(),
-							errorMsg, Toast.LENGTH_LONG).show();
+					Toasty.custom(getApplicationContext(),
+							errorMsg, R.drawable.close_24dp,R.color.colorPrimary, Toast.LENGTH_LONG,true,true).show();
 				}
 			} catch (JSONException e) {
 				e.printStackTrace();
@@ -114,8 +116,8 @@ public class MainActivity extends AppCompatActivity {
 
 		}, error -> {
 			Log.e(TAG, "Login Error: " + error.getMessage());
-			Toast.makeText(getApplicationContext(),
-					error.getMessage(), Toast.LENGTH_LONG).show();
+			Toasty.custom(getApplicationContext(),
+					error.getMessage(),R.drawable.close_24dp,R.color.colorPrimary, Toast.LENGTH_LONG,true,true).show();
 			hideDialog();
 		}) {
 			//Mapping the users input with the database user information

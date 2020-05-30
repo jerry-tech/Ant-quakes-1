@@ -68,16 +68,7 @@ public class DashElectric extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View root = inflater.inflate(R.layout.fragment_dash_electric, container, false);
-
-        //dropdown for wallet amount
-        Spinner walletSpinner = root.findViewById(R.id.walletElectric);
-        ArrayAdapter<CharSequence> adapterWallet = ArrayAdapter.createFromResource(
-                root.getContext(),
-                R.array.walletAmt,
-                R.layout.spinner_wallet
-        );
-        adapterWallet.setDropDownViewResource(R.layout.spinner_dropdown_item);
-        walletSpinner.setAdapter(adapterWallet);
+        
 
         //dropdown for electric company
         Spinner electricSpinner = root.findViewById(R.id.electricComp);

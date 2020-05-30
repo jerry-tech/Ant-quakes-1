@@ -32,6 +32,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.regex.Pattern;
 
+import es.dmoral.toasty.Toasty;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -141,7 +143,7 @@ public class DashAirtime extends Fragment {
 					}
 
 					//Creating the array adapter class to populate the spinner.
-					ArrayAdapter<String> adapter = new ArrayAdapter<String>(
+					ArrayAdapter<String> adapter = new ArrayAdapter<>(
 							//Getting the activity.
 							root.getContext(),
 							//Getting the UI.
@@ -185,7 +187,7 @@ public class DashAirtime extends Fragment {
 				text = selected;
 				int duration = Toast.LENGTH_SHORT;
 
-				Toast toast = Toast.makeText(context, text, duration);
+				Toast toast = Toasty.custom(context, text,R.drawable.info_24dp,R.color.colorAccent, duration,true,true);
 				toast.show();
 
 			}
@@ -248,13 +250,13 @@ public class DashAirtime extends Fragment {
 
 						//Logic for correct airtime purchase
 						if (!error) {
-							Toast.makeText(getActivity().getApplicationContext(), "The wallet amount is " + walletAmnt + " The network is " + network + " the number is " + number + " the amount is " + amount, Toast.LENGTH_SHORT).show();
+							Toasty.success(getActivity().getApplicationContext(), "The wallet amount is " + walletAmnt + " The network is " + network + " the number is " + number + " the amount is " + amount, Toast.LENGTH_SHORT,true).show();
 
 						} else {
 
 							String errorMsg = jObj.getString("text");
-							Toast.makeText(getActivity().getApplicationContext(),
-									errorMsg, Toast.LENGTH_LONG).show();
+							Toasty.custom(getActivity().getApplicationContext(),
+									errorMsg,R.drawable.close_24dp,R.color.colorPrimary, Toast.LENGTH_LONG,true,true).show();
 						}
 					} catch (JSONException e) {
 						e.printStackTrace();
@@ -262,8 +264,8 @@ public class DashAirtime extends Fragment {
 
 				}, error -> {
 					Log.e(TAG, "Airtime Error: " + error.getMessage());
-					Toast.makeText(getActivity().getApplicationContext(),
-							error.getMessage(), Toast.LENGTH_LONG).show();
+					Toasty.custom(getActivity().getApplicationContext(),
+							error.getMessage(),R.drawable.close_24dp,R.color.colorPrimary, Toast.LENGTH_LONG,true,true).show();
 					hideDialog();
 				}) {
 					//Mapping the users input with the database user information
@@ -283,12 +285,12 @@ public class DashAirtime extends Fragment {
 				AppSingleton.getInstance(getActivity().getApplicationContext()).addToRequestQueue(strReq, cancel_req_tag);
 
 			} else {
-				Toast.makeText(getActivity().getApplicationContext(), "Incorrect phone number", Toast.LENGTH_SHORT).show();
+				Toasty.custom(getActivity().getApplicationContext(), "Incorrect phone number", R.drawable.close_24dp,R.color.colorPrimary, Toast.LENGTH_LONG,true,true).show();
 			}
 
 		} else {
 
-			Toast.makeText(getActivity().getApplicationContext(), "Fields can not be empty", Toast.LENGTH_SHORT).show();
+			Toasty.custom(getActivity().getApplicationContext(), "Fields can not be empty", R.drawable.warning_24dp,R.color.colorPrimary, Toast.LENGTH_LONG,true,true).show();
 
 		}
 

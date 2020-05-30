@@ -70,16 +70,6 @@ public class DashDataBundle extends Fragment {
         View root =  inflater.inflate(R.layout.fragment_dash_data_bundle, container, false);
 
 
-        //dropdown for wallet amount
-        Spinner walletSpinner = root.findViewById(R.id.walletData);
-        ArrayAdapter<CharSequence> adapterWallet = ArrayAdapter.createFromResource(
-                root.getContext(),
-                R.array.walletAmt,
-                R.layout.spinner_wallet
-        );
-        adapterWallet.setDropDownViewResource(R.layout.spinner_dropdown_item);
-        walletSpinner.setAdapter(adapterWallet);
-
         //network type
         Spinner networkType = root.findViewById(R.id.networkTypeData);
         // using the array adapter class && the array adapter public constructor which accepts three parameters to get all items

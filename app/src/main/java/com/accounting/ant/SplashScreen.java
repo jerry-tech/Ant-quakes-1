@@ -45,60 +45,6 @@ public class SplashScreen extends AppCompatActivity{
        moveLogin();
     }
 
-//    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR1)
-//    //second method under the itemListener interface
-//    @Override
-//    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-//        String selectedText = parent.getSelectedItem().toString().trim();
-//        if (selectedText.equalsIgnoreCase("Yoruba")) {
-//
-//            // calling the setLocale method
-//            setLocale("yo");
-//            recreate();//inbuilt method in the Activity class
-//          //calling the method holding the intent
-//            moveLogin();
-//        }else if(selectedText.equalsIgnoreCase("English")){
-//            // calling the setLocale method
-//            setLocale("en");
-//            recreate();//inbuilt method in the Activity class
-//            //calling the method holding the intent
-//            moveLogin();
-//        }
-//    }
-
-    //second method under the itemListener interface
-//    @Override
-//    public void onNothingSelected(AdapterView<?> parent) {
-//
-//    }
-
-//    //method for setting language on selection
-//    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR1)
-//    private void setLocale(String lang) {
-//        Locale locale = new Locale(lang);
-//        Locale.setDefault(locale);
-//
-//        Configuration configuration = new Configuration();
-//
-//        //configuration.setLocale(locale);
-//        configuration.locale = locale;
-//
-//        getBaseContext().getResources().updateConfiguration(configuration, getBaseContext().getResources().getDisplayMetrics());
-//
-//        SharedPreferences.Editor sharedPreferences = getSharedPreferences("Settings", MODE_PRIVATE).edit();
-//        sharedPreferences.putString("Language", lang);
-//        sharedPreferences.apply();
-//    }
-
-//    //loading the languages in android shared preferences in the onCreate method
-//    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR1)
-//    public void loadLocale() {
-//
-//        SharedPreferences prefs = getSharedPreferences("Settings", Activity.MODE_PRIVATE);
-//        String language = prefs.getString("Language", "");
-//        setLocale(language);
-//    }
-
     //creating animated intent for next page
     public void moveLogin() {
 
