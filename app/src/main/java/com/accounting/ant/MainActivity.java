@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 	//Creating the tag to handle success or cancel events.
 	private static final String TAG = "LoginActivity";
 	//The url for the LoginAPI
-	private static final String URL_FOR_LOGIN = "https://antquakes.codeweb.com.ng/API/login.php";
+	private static final String URL_FOR_LOGIN = "https://api.antquakes.com.ng/login.php";
 
 	ProgressDialog progressDialog;
 	TextInputEditText username, password;
@@ -111,7 +111,8 @@ public class MainActivity extends AppCompatActivity {
 							errorMsg, R.drawable.close_24dp,R.color.colorPrimary, Toast.LENGTH_LONG,true,true).show();
 				}
 			} catch (JSONException e) {
-				e.printStackTrace();
+//				e.printStackTrace();
+				Toasty.custom(getApplicationContext(),"Network Error", R.drawable.close_24dp,R.color.colorPrimary, Toast.LENGTH_LONG,true,true).show();
 			}
 
 		}, error -> {

@@ -1,6 +1,7 @@
 package com.accounting.ant;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,6 +11,8 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
 import androidx.fragment.app.Fragment;
+
+import com.google.android.material.textfield.TextInputEditText;
 
 
 /**
@@ -31,6 +34,13 @@ public class DashElectric extends Fragment {
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
+
+    //Creating the shared preference
+    SharedPreferences preferences, walletPreference;
+    TextInputEditText walletAmount;
+    //Getting Usernaqme and password and walletbalance
+    String username, password, walletbalance;
+
 
     public DashElectric() {
         // Required empty public constructor
@@ -91,7 +101,23 @@ public class DashElectric extends Fragment {
         adapterMeter.setDropDownViewResource(R.layout.spinner_dropdown_item);
         discoSpinner.setAdapter(adapterMeter);
 
+        //Getting the Components.
 
+        //Button to buy airtime.
+        walletAmount = root.findViewById(R.id.walletAmountt);
+
+        //Getting the userdetails with shared preference.
+        preferences = getActivity().getSharedPreferences("user_details", Context.MODE_PRIVATE);
+        username = preferences.getString("username", null);
+        password = preferences.getString("password", null);
+
+
+        //Getting the wallet balance with shared preference.
+        walletPreference = getActivity().getSharedPreferences("walletDetails", Context.MODE_PRIVATE);
+        walletbalance = walletPreference.getString("wallet",null);
+
+
+        walletAmount.setText(walletbalance);
         return root;
     }
 

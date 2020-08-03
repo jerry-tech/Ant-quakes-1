@@ -54,16 +54,17 @@
                     app:hintEnabled="true">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/walletAmountt"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:backgroundTint="@color/blackcolor"
                         android:drawableStart="@drawable/ic_account_balance_wallet_black_24dp"
                         android:drawableLeft="@drawable/ic_account_balance_wallet_black_24dp"
                         android:drawablePadding="14dp"
-                        android:inputType="text"
-                        android:padding="18dp"
                         android:enabled="false"
                         android:focusable="false"
+                        android:inputType="text"
+                        android:padding="18dp"
                         android:textColor="@color/blackcolor"
                         android:textColorHint="@color/blackcolor"
                         android:textSize="16sp" />

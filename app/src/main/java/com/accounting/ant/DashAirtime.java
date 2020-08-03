@@ -57,7 +57,7 @@ public class DashAirtime extends Fragment {
 
 	private static final String AIRTIME_TAG = "AirtimeActivity";
 	//The url for the AIRTIME API
-	private static final String URL_AIRTIME = "https://antquakes.codeweb.com.ng/API/airtime.php";
+	private static final String URL_AIRTIME = "https://api.antquakes.com.ng/test/airtime.php";
 
 	//Getting the components from the xml file.
 	TextInputEditText walletAmount, walletPhone, walletQuant;
@@ -70,13 +70,13 @@ public class DashAirtime extends Fragment {
 
 	//Creating the shared preference
 	SharedPreferences preferences, walletPreference;
-	//Getting Usernaqme and password
+	//Getting Usernaqme and password and wallet
 	String username, password, walletbalance;
 
 
 	private OnFragmentInteractionListener mListener;
 
-	String URL = "https://antquakes.codeweb.com.ng/API/services/network.php";
+	String URL = "https://api.antquakes.com.ng/services/network.php";
 	private static final String TAG = "NetworkActivity";
 
 
@@ -174,7 +174,9 @@ public class DashAirtime extends Fragment {
 					networkType.setAdapter(adapter);
 				}
 			} catch (JSONException e) {
-				e.printStackTrace();
+//				e.printStackTrace();
+				Toasty.custom(root.getContext(), "Network Error", R.drawable.close_24dp, R.color.colorPrimary, Toast.LENGTH_LONG, true, true).show();
+
 			}
 		}, volleyError -> volleyError.printStackTrace());
 		requestQueue.add(stringRequest);
@@ -215,7 +217,7 @@ public class DashAirtime extends Fragment {
 
 		//Getting the wallet balance with shared preference.
 		walletPreference = getActivity().getSharedPreferences("walletDetails", Context.MODE_PRIVATE);
-		walletbalance = walletPreference.getString("wallet",null);
+		walletbalance = walletPreference.getString("wallet", null);
 
 		// Progress dialog
 		progressDialog = new ProgressDialog(root.getContext());
@@ -225,7 +227,7 @@ public class DashAirtime extends Fragment {
 		buyAirtime.setOnClickListener(e -> buyAirtimeClick(username, password, walletAmount.getText().toString(), text, walletPhone.getText().toString(), walletQuant.getText().toString()));
 
 		//Adding the amount in the to the UI.
-		walletAmount.setText("#"+walletbalance);
+		walletAmount.setText("#" + walletbalance);
 
 		// Inflate the layout for this fragment
 		return root;
@@ -258,7 +260,7 @@ public class DashAirtime extends Fragment {
 
 						//Logic for correct airtime purchase
 						if (!error) {
-							Toasty.success(getActivity().getApplicationContext(), "Purchased Successfully.", Toast.LENGTH_SHORT,true).show();
+							Toasty.success(getActivity().getApplicationContext(), "Purchased Successfully.", Toast.LENGTH_SHORT, true).show();
 							Intent intent = new Intent(getContext(), UserOptions.class);
 							startActivity(intent);
 							getActivity().finish();
@@ -268,7 +270,7 @@ public class DashAirtime extends Fragment {
 
 							String errorMsg = jObj.getString("text");
 							Toasty.custom(getActivity().getApplicationContext(),
-									errorMsg,  R.drawable.close_24dp,R.color.colorPrimary, Toast.LENGTH_LONG,true,true).show();
+									errorMsg, R.drawable.close_24dp, R.color.colorPrimary, Toast.LENGTH_LONG, true, true).show();
 						}
 					} catch (JSONException e) {
 						e.printStackTrace();
@@ -277,7 +279,7 @@ public class DashAirtime extends Fragment {
 				}, error -> {
 					Log.e(TAG, "Airtime Error: " + error.getMessage());
 					Toasty.custom(getActivity().getApplicationContext(),
-							error.getMessage(), R.drawable.close_24dp,R.color.colorPrimary, Toast.LENGTH_LONG,true,true).show();
+							error.getMessage(), R.drawable.close_24dp, R.color.colorPrimary, Toast.LENGTH_LONG, true, true).show();
 					hideDialog();
 				}) {
 					//Mapping the users input with the database user information
@@ -287,9 +289,9 @@ public class DashAirtime extends Fragment {
 						Map<String, String> params = new HashMap<>();
 						params.put("username", username);
 						params.put("password", password);
-						params.put("network",network.toString());
-						params.put("number",number);
-						params.put("amount",amount);
+						params.put("network", network.toString());
+						params.put("number", number);
+						params.put("amount", amount);
 						return params;
 					}
 				};
@@ -297,12 +299,12 @@ public class DashAirtime extends Fragment {
 				AppSingleton.getInstance(getActivity().getApplicationContext()).addToRequestQueue(strReq, cancel_req_tag);
 
 			} else {
-				Toasty.custom(getActivity().getApplicationContext(), "Incorrect phone number",  R.drawable.close_24dp,R.color.colorPrimary, Toast.LENGTH_LONG,true,true).show();
+				Toasty.custom(getActivity().getApplicationContext(), "Incorrect phone number", R.drawable.close_24dp, R.color.colorPrimary, Toast.LENGTH_LONG, true, true).show();
 			}
 
 		} else {
 
-			Toasty.custom(getActivity().getApplicationContext(), "Fields can not be empty",  R.drawable.warning_24dp,R.color.colorPrimary, Toast.LENGTH_LONG,true,true).show();
+			Toasty.custom(getActivity().getApplicationContext(), "Fields can not be empty", R.drawable.warning_24dp, R.color.colorPrimary, Toast.LENGTH_LONG, true, true).show();
 
 		}
 

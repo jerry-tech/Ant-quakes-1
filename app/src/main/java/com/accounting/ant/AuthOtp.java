@@ -32,9 +32,9 @@ public class AuthOtp extends AppCompatActivity {
 	//Getting the URL for the API
 	private static final String TAG = "RegisterActivity";
 
-	private static final String URL_FOR_VERIFICATION = "https://antquakes.codeweb.com.ng/API/register.php?action=Verify";
+	private static final String URL_FOR_VERIFICATION = "https://api.antquakes.com.ng/register.php?action=Verify";
 
-	private static final String URL_FOR_RESENDING_OTP = "https://antquakes.codeweb.com.ng/API/register.php?action=Resend";
+	private static final String URL_FOR_RESENDING_OTP = "https://api.antquakes.com.ng/register.php?action=Resend";
 	//Creating a Progress Dialog.
 	ProgressDialog progressDialog;
 
@@ -42,11 +42,11 @@ public class AuthOtp extends AppCompatActivity {
 	EditText otpone, otptwo, otpthree, otpfour, otpfive, otpsix;
 	TextView countdown;
 	Button verify;
-	TextWatcher textWatcherOne = null,textWatcherTwo = null,textWatcherThree = null,textWatcherFour = null,textWatcherFive = null;
+	TextWatcher textWatcherOne = null, textWatcherTwo = null, textWatcherThree = null, textWatcherFour = null, textWatcherFive = null;
 
 	//Creating the shared preference
 	SharedPreferences preferences;
-//	SharedPreferences.Editor editor;
+	//	SharedPreferences.Editor editor;
 	//Retrieving the email with shared preferences
 	String email;
 	//Getting the action
@@ -231,7 +231,7 @@ public class AuthOtp extends AppCompatActivity {
 	//Method to check for empty OTP
 	private void emptyChecker(String one, String two, String three, String four, String five, String six) {
 		if (one.equals("") || two.equals("") || three.equals("") || four.equals("") || five.equals("") || six.equals("")) {
-			Toasty.custom(this, "You can not have an empty OTP!", R.drawable.warning_24dp,R.color.colorPrimary, Toast.LENGTH_LONG,true,true).show();
+			Toasty.custom(this, "You can not have an empty OTP!", R.drawable.warning_24dp, R.color.colorPrimary, Toast.LENGTH_LONG, true, true).show();
 		} else {
 			verify(action, email, otpone.getText().toString() + otptwo.getText().toString() + otpthree.getText().toString() + otpfour.getText().toString()
 					+ otpfive.getText().toString() + otpsix.getText().toString()
@@ -271,16 +271,17 @@ public class AuthOtp extends AppCompatActivity {
 
 					String errorMsg = jObj.getString("text");
 					Toasty.custom(getApplicationContext(),
-							errorMsg, R.drawable.close_24dp,R.color.colorPrimary, Toast.LENGTH_LONG,true,true).show();
+							errorMsg, R.drawable.close_24dp, R.color.colorPrimary, Toast.LENGTH_LONG, true, true).show();
 				}
 			} catch (JSONException e) {
-				e.printStackTrace();
+//				e.printStackTrace();
+				Toasty.custom(getApplicationContext(), "Network Error", R.drawable.close_24dp, R.color.colorPrimary, Toast.LENGTH_LONG, true, true).show();
 			}
 
 		}, error -> {
 			Log.e(TAG, "Verification Error: " + error.getMessage());
 			Toasty.custom(getApplicationContext(),
-					error.getMessage(),R.drawable.close_24dp,R.color.colorPrimary, Toast.LENGTH_LONG,true,true).show();
+					error.getMessage(), R.drawable.close_24dp, R.color.colorPrimary, Toast.LENGTH_LONG, true, true).show();
 			hideDialog();
 		}) {
 			@Override
@@ -319,10 +320,10 @@ public class AuthOtp extends AppCompatActivity {
 				String message = jObj.getString("text");
 
 				if (!error) {
-					Toasty.success(getApplicationContext(), message, Toast.LENGTH_SHORT,true).show();
+					Toasty.success(getApplicationContext(), message, Toast.LENGTH_SHORT, true).show();
 
 				} else {
-					Toasty.custom(getApplicationContext(), message, R.drawable.close_24dp,R.color.colorPrimary, Toast.LENGTH_LONG,true,true).show();
+					Toasty.custom(getApplicationContext(), message, R.drawable.close_24dp, R.color.colorPrimary, Toast.LENGTH_LONG, true, true).show();
 				}
 			} catch (JSONException e) {
 				e.printStackTrace();
@@ -331,7 +332,7 @@ public class AuthOtp extends AppCompatActivity {
 		}, error -> {
 			Log.e(TAG, "Resending OTP Error: " + error.getMessage());
 			Toasty.custom(getApplicationContext(),
-					error.getMessage(), R.drawable.close_24dp,R.color.colorPrimary, Toast.LENGTH_LONG,true,true).show();
+					error.getMessage(), R.drawable.close_24dp, R.color.colorPrimary, Toast.LENGTH_LONG, true, true).show();
 			hideDialog();
 		}) {
 			@Override
