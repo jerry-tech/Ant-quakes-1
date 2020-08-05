@@ -14,9 +14,8 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            app:cardElevation="20dp"
-            app:cardCornerRadius="12dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="10dp"
             android:background="@color/background_main">
 
             <LinearLayout
@@ -29,12 +28,11 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
-                    android:fontFamily="cursive"
+                    android:fontFamily="@font/capriola"
                     android:gravity="center"
                     android:text="@string/buy_airtime"
                     android:textColor="@color/blackcolor"
-                    android:textSize="30sp"
-                    />
+                    android:textSize="30sp" />
 
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -47,7 +45,6 @@
                     android:background="@drawable/spinner_wallet"
                     android:layout_marginEnd="20dp"
                     android:layout_marginRight="20dp"
-                    android:hint="@string/wallet_amount"
                     android:textColorHint="@color/blackcolor"
                    android:textSize="16sp"
                     app:hintEnabled="true">
@@ -55,18 +52,19 @@
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/walletAmount"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:backgroundTint="@color/blackcolor"
                         android:drawableStart="@drawable/ic_account_balance_wallet_black_24dp"
                         android:drawableLeft="@drawable/ic_account_balance_wallet_black_24dp"
                         android:drawablePadding="14dp"
-                        android:inputType="text"
-                        android:padding="18dp"
                         android:enabled="false"
                         android:focusable="false"
+                        android:fontFamily="@font/capriola"
+                        android:inputType="text"
+                        android:padding="12dp"
                         android:textColor="@color/blackcolor"
                         android:textColorHint="@color/blackcolor"
-                       android:textSize="16sp" />
+                        android:textSize="16sp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -112,11 +110,12 @@
                         android:drawableStart="@drawable/phone_black"
                         android:drawableLeft="@drawable/phone_black"
                         android:drawablePadding="14dp"
+                        android:fontFamily="@font/capriola"
                         android:inputType="phone"
-                        android:padding="18dp"
+                        android:padding="16dp"
                         android:textColor="@color/blackcolor"
                         android:textColorHint="@color/blackcolor"
-                       android:textSize="16sp" />
+                        android:textSize="16sp" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -136,18 +135,19 @@
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/walletQuant"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:backgroundTint="@color/signUp"
                         android:drawableStart="@drawable/naira"
                         android:drawableLeft="@drawable/naira"
                         android:drawablePadding="14dp"
+                        android:fontFamily="@font/capriola"
                         android:inputType="numberDecimal"
-                        android:padding="25dp"
+                        android:padding="16dp"
                         android:paddingStart="20dp"
                         android:paddingLeft="20dp"
                         android:textColor="@color/blackcolor"
                         android:textColorHint="@color/blackcolor"
-                       android:textSize="16sp"
+                        android:textSize="16sp"
                         tools:ignore="RtlSymmetry" />
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -162,6 +162,7 @@
                     android:layout_marginRight="20dp"
                     android:layout_marginBottom="30dp"
                     android:background="@drawable/rounded_button"
+                    android:fontFamily="@font/capriola"
                     android:text="@string/buy_airtime"
                     android:textColor="@color/background_main"
                     android:textSize="16sp" />
@@ -175,6 +176,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center"
             android:layout_marginTop="30dp"
+            android:fontFamily="@font/capriola"
             android:padding="5dp"
             android:text="@string/powered_by_codeweb"
             android:textColor="@color/blackcolor"

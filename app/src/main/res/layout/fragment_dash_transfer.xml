@@ -15,14 +15,9 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
             android:background="@color/background_main"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="20dp">
+            app:cardCornerRadius="5dp"
+            app:cardElevation="10dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -34,12 +29,11 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
-                    android:fontFamily="cursive"
+                    android:fontFamily="@font/capriola"
                     android:gravity="center"
                     android:text="@string/transfer"
                     android:textColor="@color/blackcolor"
-                    android:textSize="35sp"
-                    />
+                    android:textSize="35sp" />
 
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
@@ -51,7 +45,6 @@
                     android:background="@drawable/spinner_wallet"
                     android:layout_marginEnd="20dp"
                     android:layout_marginRight="20dp"
-                    android:hint="@string/wallet_amount"
                     android:textColorHint="@color/blackcolor"
                     android:textSize="16sp"
                     app:hintEnabled="true">
@@ -64,10 +57,11 @@
                         android:drawableStart="@drawable/ic_account_balance_wallet_black_24dp"
                         android:drawableLeft="@drawable/ic_account_balance_wallet_black_24dp"
                         android:drawablePadding="14dp"
-                        android:inputType="text"
-                        android:padding="18dp"
                         android:enabled="false"
                         android:focusable="false"
+                        android:fontFamily="@font/capriola"
+                        android:inputType="text"
+                        android:padding="18dp"
                         android:textColor="@color/blackcolor"
                         android:textColorHint="@color/blackcolor"
                         android:textSize="16sp" />
@@ -98,6 +92,7 @@
                         android:drawableStart="@drawable/person_black"
                         android:drawableLeft="@drawable/person_black"
                         android:drawablePadding="14dp"
+                        android:fontFamily="@font/capriola"
                         android:inputType="text"
                         android:padding="18dp"
                         android:textColor="@color/blackcolor"
@@ -129,6 +124,7 @@
                         android:drawableStart="@drawable/naira"
                         android:drawableLeft="@drawable/naira"
                         android:drawablePadding="17dp"
+                        android:fontFamily="@font/capriola"
                         android:inputType="numberDecimal"
                         android:padding="18dp"
                         android:textColor="@color/blackcolor"
@@ -146,6 +142,7 @@
                     android:layout_marginRight="20dp"
                     android:layout_marginBottom="30dp"
                     android:background="@drawable/rounded_button"
+                    android:fontFamily="@font/capriola"
                     android:text="@string/transfer"
                     android:textColor="@color/background_main"
                     android:textSize="16sp" />

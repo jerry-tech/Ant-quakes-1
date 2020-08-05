@@ -14,9 +14,8 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            app:cardElevation="20dp"
-            app:cardCornerRadius="12dp"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="5dp"
             android:background="@color/background_main">
 
             <LinearLayout
@@ -49,6 +48,7 @@
                         android:drawableStart="@drawable/ic_lock_black_24dp"
                         android:drawableLeft="@drawable/ic_lock_black_24dp"
                         android:drawablePadding="14dp"
+                        android:fontFamily="@font/capriola"
                         android:inputType="textPassword"
                         android:padding="18dp"
                         android:textColor="@color/blackcolor"
@@ -80,6 +80,7 @@
                         android:drawableStart="@drawable/ic_lock_black_24dp"
                         android:drawableLeft="@drawable/ic_lock_black_24dp"
                         android:drawablePadding="14dp"
+                        android:fontFamily="@font/capriola"
                         android:inputType="textPassword"
                         android:padding="18dp"
                         android:textColor="@color/blackcolor"
@@ -109,6 +110,7 @@
                         android:drawableStart="@drawable/ic_lock_black_24dp"
                         android:drawableLeft="@drawable/ic_lock_black_24dp"
                         android:drawablePadding="17dp"
+                        android:fontFamily="@font/capriola"
                         android:inputType="textPassword"
                         android:padding="18dp"
                         android:textColor="@color/blackcolor"
@@ -124,10 +126,11 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="20dp"
-                    android:text="@string/show_password"
-                    android:textColor="@color/blackcolor"
+                    android:layout_marginRight="20dp"
                     android:buttonTint="@color/blackcolor"
-                    android:layout_marginRight="20dp"/>
+                    android:fontFamily="@font/capriola"
+                    android:text="@string/show_password"
+                    android:textColor="@color/blackcolor" />
 
                 <Button
                     android:layout_width="match_parent"

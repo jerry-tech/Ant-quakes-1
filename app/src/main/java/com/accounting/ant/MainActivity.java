@@ -20,7 +20,6 @@ import com.google.android.material.textfield.TextInputEditText;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -55,12 +54,6 @@ public class MainActivity extends AppCompatActivity {
 		password = findViewById(R.id.txtPass);
 		loginBtn = findViewById(R.id.loginBtn);
 
-
-		//Setting the footer of the application to the current date.
-		footerTime = findViewById(R.id.footerTime);
-
-		Calendar calendar = Calendar.getInstance();
-		footerTime.setText(calendar.getTime().toString());
 
 		//Button to log in user.
 		loginBtn.setOnClickListener(event -> {
@@ -154,7 +147,7 @@ public class MainActivity extends AppCompatActivity {
 
 	//Intent for forgot password
 	public void btnForgotPass() {
-		Intent intent = new Intent(this, ForgotPassword.class);
+		Intent intent = new Intent(this, UserOptions.class);
 		startActivity(intent);
 	}
 }

@@ -15,9 +15,8 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="20dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="10dp"
             android:background="@color/background_main">
 
             <LinearLayout
@@ -30,12 +29,11 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
-                    android:fontFamily="cursive"
+                    android:fontFamily="@font/capriola"
                     android:gravity="center"
                     android:text="@string/cable_tv_subscription"
                     android:textColor="@color/blackcolor"
-                    android:textSize="30sp"
-                    />
+                    android:textSize="30sp" />
 
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -48,7 +46,6 @@
                     android:background="@drawable/spinner_wallet"
                     android:layout_marginEnd="20dp"
                     android:layout_marginRight="20dp"
-                    android:hint="@string/wallet_amount"
                     android:textColorHint="@color/blackcolor"
                     android:textSize="16sp"
                     app:hintEnabled="true">
@@ -61,12 +58,12 @@
                         android:drawableStart="@drawable/ic_account_balance_wallet_black_24dp"
                         android:drawableLeft="@drawable/ic_account_balance_wallet_black_24dp"
                         android:drawablePadding="14dp"
+                        android:enabled="true"
+                        android:focusable="false"
+                        android:fontFamily="@font/capriola"
                         android:inputType="text"
                         android:padding="18dp"
-                        android:enabled="false"
-                        android:focusable="false"
                         android:textColor="@color/blackcolor"
-                        android:textColorHint="@color/blackcolor"
                         android:textSize="16sp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -113,11 +110,12 @@
                         android:drawableStart="@drawable/ic_credit_card_black_24dp"
                         android:drawableLeft="@drawable/ic_credit_card_black_24dp"
                         android:drawablePadding="16dp"
+                        android:fontFamily="@font/capriola"
                         android:inputType="phone"
                         android:padding="18dp"
                         android:textColor="@color/blackcolor"
                         android:textColorHint="@color/blackcolor"
-                        android:textSize="16sp"/>
+                        android:textSize="16sp" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -142,12 +140,13 @@
                         android:drawableStart="@drawable/person_black"
                         android:drawableLeft="@drawable/person_black"
                         android:drawablePadding="16dp"
-                        android:inputType="number"
                         android:enabled="false"
+                        android:fontFamily="@font/capriola"
+                        android:inputType="number"
                         android:padding="18dp"
                         android:textColor="@color/blackcolor"
                         android:textColorHint="@color/blackcolor"
-                        android:textSize="16sp"/>
+                        android:textSize="16sp" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <Spinner

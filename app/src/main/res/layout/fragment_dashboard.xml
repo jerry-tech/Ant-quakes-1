@@ -42,14 +42,13 @@
                     tools:ignore="RelativeOverlap" />
 
                 <TextView
-                    android:id="@+id/walletBalance"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
                     android:text="@string/walletamt"
-                    android:textColor="@color/background_main"
                     android:textSize="25sp"
-                    android:textStyle="bold" />
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/background_main"
+                    android:textStyle="bold"/>
 
             </LinearLayout>
 
@@ -73,14 +72,13 @@
                     tools:ignore="RelativeOverlap" />
 
                 <TextView
-                    android:id="@+id/commission"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
                     android:text="@string/walletamt"
-                    android:textColor="@color/background_main"
                     android:textSize="25sp"
-                    android:textStyle="bold" />
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/background_main"
+                    android:textStyle="bold"/>
 
             </LinearLayout>
 

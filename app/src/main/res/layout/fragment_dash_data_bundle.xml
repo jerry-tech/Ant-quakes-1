@@ -15,14 +15,10 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginRight="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="10dp"
             android:background="@color/background_main"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="20dp">
+            >
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -34,7 +30,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
-                    android:fontFamily="cursive"
+                    android:fontFamily="@font/capriola"
                     android:gravity="center"
                     android:text="@string/buy_data_bundle"
                     android:textColor="@color/blackcolor"
@@ -51,8 +47,6 @@
                     android:background="@drawable/spinner_wallet"
                     android:layout_marginEnd="20dp"
                     android:layout_marginRight="20dp"
-                    android:hint="@string/wallet_amount"
-                    android:textColorHint="@color/blackcolor"
                     android:textSize="16sp"
                     app:hintEnabled="true">
 
@@ -63,10 +57,11 @@
                         android:drawableStart="@drawable/ic_account_balance_wallet_black_24dp"
                         android:drawableLeft="@drawable/ic_account_balance_wallet_black_24dp"
                         android:drawablePadding="14dp"
-                        android:inputType="text"
-                        android:padding="18dp"
                         android:enabled="false"
                         android:focusable="false"
+                        android:fontFamily="@font/capriola"
+                        android:inputType="text"
+                        android:padding="18dp"
                         android:textColor="@color/blackcolor"
                         android:textColorHint="@color/blackcolor"
                         android:textSize="16sp" />
@@ -134,6 +129,7 @@
                         android:drawableStart="@drawable/phone_black"
                         android:drawableLeft="@drawable/phone_black"
                         android:drawablePadding="17dp"
+                        android:fontFamily="@font/capriola"
                         android:inputType="number"
                         android:padding="18dp"
                         android:textColor="@color/blackcolor"
@@ -151,6 +147,7 @@
                     android:layout_marginRight="20dp"
                     android:layout_marginBottom="30dp"
                     android:background="@drawable/rounded_button"
+                    android:fontFamily="@font/capriola"
                     android:text="@string/buy"
                     android:textColor="@color/background_main"
                     android:textSize="16sp" />
@@ -164,6 +161,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center"
             android:layout_marginTop="30dp"
+            android:fontFamily="@font/capriola"
             android:padding="5dp"
             android:text="@string/powered_by_codeweb"
             android:textColor="@color/blackcolor"
