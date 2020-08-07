@@ -1,6 +1,7 @@
 package com.accounting.ant;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,8 +10,12 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
+
+import com.accounting.ant.api.Balance;
+import com.google.android.material.textfield.TextInputEditText;
 
 
 /**
@@ -34,6 +39,16 @@ public class DashSubscription extends Fragment implements AdapterView.OnItemSele
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
+
+    //Getting Usernaqme and password
+    String username, password;
+
+    //Creating the shared preference and Using Shared preferences.
+    SharedPreferences preferences;
+
+
+    //Getting the wallet amount from the xml
+    TextInputEditText walletBalance;
 
     public DashSubscription() {
         // Required empty public constructor
@@ -119,6 +134,23 @@ public class DashSubscription extends Fragment implements AdapterView.OnItemSele
 
 
         cableType.setOnItemSelectedListener(this);
+
+
+        //Logic to get the price of the wallet.
+        walletBalance = root.findViewById(R.id.walletAmountSub);
+
+        //Getting the email of the user with shared preference.
+        preferences = getActivity().getSharedPreferences("user_details", Context.MODE_PRIVATE);
+        username = preferences.getString("username", null);
+        password = preferences.getString("password", null);
+
+
+        //Calling the API to display the balance
+        Balance balance = new Balance();
+        balance.getBalance(username,password,walletBalance);
+        System.out.println(balance.trying);
+        Toast.makeText(getActivity(), balance.trying, Toast.LENGTH_SHORT).show();
+
         return root;
     }
 
