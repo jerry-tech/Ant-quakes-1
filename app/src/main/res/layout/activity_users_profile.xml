@@ -59,7 +59,6 @@
         </androidx.appcompat.widget.Toolbar>
 
 
-
         <TextView
             android:id="@+id/tv_name"
             android:layout_width="wrap_content"
@@ -67,11 +66,11 @@
             android:layout_below="@+id/toolbar"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
-            android:fontFamily="sans-serif-light"
+            android:fontFamily="@font/capriola"
             android:text="Udoh Jeremiah"
-            android:textStyle="bold"
             android:textColor="@color/background_main"
-            android:textSize="28sp" />
+            android:textSize="28sp"
+            android:textStyle="bold" />
 
 
         <TextView
@@ -80,7 +79,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/tv_name"
             android:layout_centerHorizontal="true"
-            android:fontFamily="sans-serif"
+            android:fontFamily="@font/capriola"
             android:text="UJEREMIAH"
             android:textColor="@color/whiteSmoke"
             android:textSize="16sp" />
@@ -104,6 +103,7 @@
                 android:id="@+id/tabProfile"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:tabTextColor="@color/background_main"
                 android:background="@color/colorPrimary">
 
                 <!--tab items already created programmatically-->

@@ -61,8 +61,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="30dp"
+            android:drawableStart="@mipmap/ic_launcher"
             android:drawableLeft="@mipmap/ic_launcher"
             android:drawablePadding="20dp"
+            android:fontFamily="@font/capriola"
             android:gravity="center|end"
             android:paddingEnd="10dp"
             android:paddingRight="10dp"
@@ -73,8 +75,7 @@
             app:layout_constraintLeft_toLeftOf="@id/toolbarAbout"
             app:layout_constraintRight_toRightOf="@id/toolbarAbout"
             app:layout_constraintTop_toBottomOf="@id/toolbarAbout"
-            tools:ignore="RtlSymmetry"
-            android:drawableStart="@mipmap/ic_launcher" />
+            tools:ignore="RtlSymmetry" />
 
         <TextView
             android:id="@+id/about_text"

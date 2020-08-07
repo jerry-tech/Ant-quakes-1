@@ -7,7 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -32,8 +31,8 @@ public class FundWalletFragment extends Fragment {
 
         View root = inflater.inflate(R.layout.fragment_fundwallet, container, false);
 
-        final TextView textView = root.findViewById(R.id.text_gallery);
-        galleryViewModel.getText().observe(this, textView::setText);
+//        final TextView textView = root.findViewById(R.id.text_gallery);
+//        galleryViewModel.getText().observe(this, textView::setText);
 
         button = root.findViewById(R.id.btnSubmit); //getting the id of the submit button
         textInputAmount = root.findViewById(R.id.txtAmountInput);//getting the id of the TextInputEditText

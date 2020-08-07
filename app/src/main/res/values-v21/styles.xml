@@ -7,6 +7,6 @@
     </style>
 
     <style name="RobotoEditTextStyle" parent="android:Widget.Material.EditText">
-        <item name="android:fontFamily">monospace</item>
+        <item name="android:fontFamily">@font/capriola</item>
     </style>
 </resources>

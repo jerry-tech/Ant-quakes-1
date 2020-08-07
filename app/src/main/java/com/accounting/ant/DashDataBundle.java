@@ -80,17 +80,7 @@ public class DashDataBundle extends Fragment {
         );
         adapter.setDropDownViewResource(R.layout.spinner_dropdown_item);
         networkType.setAdapter(adapter);
-
-        //dropdown for dataBundle
-        Spinner dataBundle = root.findViewById(R.id.bundlePlan);
-        ArrayAdapter<CharSequence> adapterBundle = ArrayAdapter.createFromResource(
-                root.getContext(),
-                R.array.dataBundle,
-                R.layout.spinner_data
-        );
-        adapterBundle.setDropDownViewResource(R.layout.spinner_dropdown_item);
-        dataBundle.setAdapter(adapterBundle);
-
+        
         //for dataType
         Spinner dataType = root.findViewById(R.id.data_type);
         // using the array adapter class && the array adapter public constructor which accepts three parameters to get all items

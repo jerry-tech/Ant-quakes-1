@@ -62,11 +62,11 @@
                         android:drawableStart="@drawable/person_35dp"
                         android:drawableLeft="@drawable/person_35dp"
                         android:drawablePadding="16dp"
+                        android:fontFamily="@font/capriola"
                         android:inputType="text"
                         android:padding="16dp"
                         android:textColor="@color/background_main"
-                        android:textSize="16sp"
-                         />
+                        android:textSize="16sp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -93,12 +93,12 @@
                         android:drawableStart="@drawable/person_35dp"
                         android:drawableLeft="@drawable/person_35dp"
                         android:drawablePadding="16dp"
+                        android:fontFamily="@font/capriola"
                         android:inputType="text"
                         android:padding="16dp"
                         android:textColor="@color/background_main"
                         android:textColorHint="@color/blackcolor"
-                        android:textSize="16sp"
-                         />
+                        android:textSize="16sp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -124,12 +124,12 @@
                         android:drawableStart="@drawable/person_35dp"
                         android:drawableLeft="@drawable/person_35dp"
                         android:drawablePadding="16dp"
+                        android:fontFamily="@font/capriola"
                         android:inputType="text"
                         android:padding="16dp"
                         android:textColor="@color/background_main"
                         android:textColorHint="@color/background_main"
-                        android:textSize="16sp"
-                         />
+                        android:textSize="16sp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -155,12 +155,12 @@
                         android:drawableStart="@drawable/ic_email_white_24dp"
                         android:drawableLeft="@drawable/ic_email_white_24dp"
                         android:drawablePadding="16dp"
+                        android:fontFamily="@font/capriola"
                         android:inputType="textEmailAddress"
                         android:padding="16dp"
                         android:textColor="@color/background_main"
                         android:textColorHint="@color/background_main"
-                        android:textSize="16sp"
-                         />
+                        android:textSize="16sp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -186,12 +186,12 @@
                         android:drawableStart="@drawable/ic_vpn_key_white_24dp"
                         android:drawableLeft="@drawable/ic_vpn_key_white_24dp"
                         android:drawablePadding="16dp"
+                        android:fontFamily="@font/capriola"
                         android:inputType="text"
                         android:padding="16dp"
                         android:textColor="@color/background_main"
                         android:textColorHint="@color/background_main"
-                        android:textSize="16sp"
-                         />
+                        android:textSize="16sp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -223,13 +223,13 @@
                             android:drawableStart="@drawable/ic_local_phone_black_24dp"
                             android:drawableLeft="@drawable/ic_local_phone_black_24dp"
                             android:drawablePadding="10dp"
+                            android:fontFamily="@font/capriola"
                             android:inputType="phone"
                             android:maxLength="4"
                             android:padding="16dp"
                             android:textColor="@color/background_main"
                             android:textColorHint="@color/background_main"
-                            android:textSize="16sp"
-                             />
+                            android:textSize="16sp" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -253,6 +253,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:backgroundTint="@color/background_main"
+                            android:fontFamily="@font/capriola"
                             android:inputType="number"
                             android:maxLength="11"
                             android:padding="23dp"
@@ -290,12 +291,12 @@
                         android:drawableStart="@drawable/regform_lock_24dp"
                         android:drawableLeft="@drawable/regform_lock_24dp"
                         android:drawablePadding="16dp"
+                        android:fontFamily="@font/capriola"
                         android:inputType="textPassword"
                         android:padding="16dp"
                         android:textColor="@color/background_main"
                         android:textColorHint="@color/background_main"
-                        android:textSize="16sp"
-                         />
+                        android:textSize="16sp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -323,12 +324,12 @@
                         android:drawableStart="@drawable/regform_lock_24dp"
                         android:drawableLeft="@drawable/regform_lock_24dp"
                         android:drawablePadding="16dp"
+                        android:fontFamily="@font/capriola"
                         android:inputType="textPassword"
                         android:padding="16dp"
                         android:textColor="@color/background_main"
                         android:textColorHint="@color/background_main"
-                        android:textSize="16sp"
-                         />
+                        android:textSize="16sp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -342,11 +343,11 @@
                     android:layout_marginRight="20dp"
                     android:layout_marginBottom="25dp"
                     android:background="@drawable/rounded_button"
+                    android:fontFamily="@font/capriola"
                     android:padding="15dp"
                     android:text="@string/register"
                     android:textColor="@color/background_main"
-                    android:textSize="20sp"
-                     />
+                    android:textSize="20sp" />
 
 
             </LinearLayout>
@@ -372,6 +373,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="10dp"
+                android:fontFamily="@font/capriola"
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
                 android:text="@string/login"
@@ -392,19 +394,21 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="25dp"
             android:layout_marginRight="25dp"
+            android:background="@drawable/forgot_password"
+            android:fontFamily="@font/capriola"
             android:gravity="center"
-            android:padding="16dp"
             android:onClick="nextLogin"
-            android:textStyle="bold"
+            android:padding="16dp"
             android:text="@string/already_have_an_account"
             android:textColor="@color/blackcolor"
-            android:background="@drawable/forgot_password"
-            android:textSize="15sp" />
+            android:textSize="15sp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
+            android:fontFamily="@font/capriola"
             android:gravity="center"
             android:padding="16dp"
             android:text="@string/terms_of_use"

@@ -7,19 +7,17 @@
     android:background="@color/background_main"
     tools:context=".ProfileFragment">
 
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/background_main"
-        tools:context=".ProfileFragment">
+        >
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardProfile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="10dp"
             android:background="@color/background_main"
             app:cardElevation="12dp"
             app:cardCornerRadius="8dp">
@@ -41,6 +39,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/capriola"
                         android:text="@string/email_address"
                         android:textColor="@color/blackcolor"
                         android:textSize="13sp"
@@ -49,12 +48,12 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="sans-serif-light"
                         android:layout_marginTop="5dp"
+                        android:fontFamily="@font/capriola"
                         android:text="ujeremiah200@gmail.com"
                         android:textColor="@color/blackcolor"
-                        android:textStyle="bold"
-                        android:textSize="18sp" />
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
 
                     <View
                         android:layout_width="match_parent"
@@ -73,6 +72,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/capriola"
                         android:text="@string/phone_number"
                         android:textColor="@color/blackcolor"
                         android:textSize="13sp"
@@ -81,12 +81,12 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="sans-serif-light"
                         android:layout_marginTop="5dp"
+                        android:fontFamily="@font/capriola"
                         android:text="+234-701-7525-242"
                         android:textColor="@color/blackcolor"
-                        android:textStyle="bold"
-                        android:textSize="18sp" />
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
 
                     <View
                         android:layout_width="match_parent"
@@ -105,6 +105,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/capriola"
                         android:text="Referral"
                         android:textColor="@color/blackcolor"
                         android:textSize="13sp"
@@ -113,12 +114,12 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:fontFamily="sans-serif-light"
                         android:layout_marginTop="5dp"
+                        android:fontFamily="@font/capriola"
                         android:text="Admin"
                         android:textColor="@color/blackcolor"
-                        android:textStyle="bold"
-                        android:textSize="18sp" />
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
 
                     <View
                         android:layout_width="match_parent"
@@ -137,6 +138,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/capriola"
                         android:text="@string/account_status"
                         android:textColor="@color/blackcolor"
                         android:textSize="13sp"
@@ -146,11 +148,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:fontFamily="sans-serif-light"
+                        android:fontFamily="@font/capriola"
                         android:text="@string/active"
                         android:textColor="@color/color_green"
-                        android:textStyle="bold"
-                        android:textSize="18sp" />
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
 
 
                 </LinearLayout>
