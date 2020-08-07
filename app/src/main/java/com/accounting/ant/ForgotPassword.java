@@ -25,7 +25,7 @@ import es.dmoral.toasty.Toasty;
 public class ForgotPassword extends AppCompatActivity {
 	//Getting the URL for the API
 	private static final String TAG = "ForgotPasswordActivity";
-	private static final String URL_FOR_REGISTRATION = "https://antquakes.codeweb.com.ng/API/lostpassword.php";
+	private static final String URL_FOR_REGISTRATION = "https://api.antquakes.com.ng/lostpassword.php";
 
 	//Creating a Progress Dialog.
 	ProgressDialog progressDialog;

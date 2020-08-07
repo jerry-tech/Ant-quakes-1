@@ -1,31 +1,64 @@
 Login
- https://antquakes.codeweb.com.ng/API/login.php?username=@username@&password=@password@
+https://api.antquakes.com.ng/login.php?username=@username@&password=@password@
 
 Registration
-https://antquakes.codeweb.com.ng/API/register.php?firstname=@firstname@&lastname=@lastname@&email=@email@&phone=@phone@&username=@username@&password=@password@&password1=@password1@&referral=@referral@
+https://api.antquakes.com.ng/register.php?firstname=@firstname@&lastname=@lastname@&email=@email@&phone=@phone@&username=@username@&password=@password@&password1=@password1@&referral=@referral@
 
 Verify Email
-https://antquakes.codeweb.com.ng/API/register.php?action=Verify&email=@email@&otp=@otp@
+https://api.antquakes.com.ng/register.php?action=Verify&email=@email@&otp=@otp@
 
-Forgot Password https://antquakes.codeweb.com.ng/API/lostpassword.php?usename=@usename@&email=@email@
+Forgot Password
+https://api.antquakes.com.ng/lostpassword.php?username=@usename@&email=@email@
 
 Resend OTP
-https://antquakes.codeweb.com.ng/API/register.php?action=Resend&email=@email@
+https://api.antquakes.com.ng/register.php?action=Resend&email=@email@
 
-Airtime API
-
-Network
-https://antquakes.codeweb.com.ng/API/services/network.php
-
-Buy Airtime
-https://antquakes.codeweb.com.ng/API/airtime.php?usename=@username@&password=@password@&network=@network@&number=@number@&amount=@amount@
 
 Balance
-https://antquakes.codeweb.com.ng/API/services/balance.php?username=@username@&password=@password@
-{ "type": "success", "Wallet": "1000.00", "Commssion": "1000.00" }
+https://api.antquakes.com.ng/services/balance.php?username=@username@&password=@password@
+
+
+Transaction history
+
+https://api.antquakes.com.ng/transaction.php?username=@username@
+
+
+
+Network API
+
+Network
+https://api.antquakes.com.ng/services/network.php
+
+
+Buy Airtime
+https://api.antquakes.com.ng/test/airtime.php?username=@username@&password=@password@&network=@network@&number=@number@&amount=@amount@
+
 
 Dataplan
-https://antquakes.codeweb.com.ng/API/services/databundle.php?username=@username@&network=@network@
+https://api.antquakes.com.ng/services/databundle.php?username=@username@&network=@network@
 
 Buy Databundle
-https://antquakes.codeweb.com.ng/API/databundle.php?usename=@username@&password=@password@&network=@network@&number=@number@&bundle=@bundle@
+https://api.antquakes.com.ng/test/databundle.php?username=@username@&password=@password@&network=@network@&number=@number@&bundle=@bundle@
+
+
+Cable API
+
+Cable
+https://api.antquakes.com.ng/services/cable.php
+
+Cable Plan
+https://api.antquakes.com.ng/services/cableplan.php?username=@username@&tv=@tv@
+
+Verify Name
+https://api.antquakes.com.ng/services/tverify.php?tv=@cable@&smartcardno=@smartcardno@
+
+Buy Cable
+https://api.antquakes.com.ng/test/cable.php?usename=@username@&password=@password@&tv=@tv@&package=@package@&smartcardno=@smartcardno@&customer=@customer@
+Buy Carry1st
+https://api.antquakes.com.ng/test/carry1st.php?username=@username@&password=@password@&cusername=@cusername@&credit=@amount@
+
+Send SMS
+https://api.antquakes.com.ng/test/sms.php?username=@username@&password=@password@&sender=@sender@&recipient=@recipient@&message=@message@
+
+Transfer
+https://api.antquakes.com.ng/test/transfer.php?username=@username@&password=@password@&receiver=@receiver@&amount=@amount@

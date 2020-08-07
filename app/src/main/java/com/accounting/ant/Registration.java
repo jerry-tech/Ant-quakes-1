@@ -28,7 +28,7 @@ import es.dmoral.toasty.Toasty;
 public class Registration extends AppCompatActivity {
 	//Getting the URL for the API
 	private static final String TAG = "RegisterActivity";
-	private static final String URL_FOR_REGISTRATION = "https://antquakes.codeweb.com.ng/API/register.php";
+	private static final String URL_FOR_REGISTRATION = "https://api.antquakes.com.ng/register.php";
 	//Creating a Progress Dialog.
 	ProgressDialog progressDialog;
 
@@ -79,18 +79,24 @@ public class Registration extends AppCompatActivity {
 		boolean check = Pattern.compile("[0]*[\\d]{9,}").matcher(phonenumber).matches();
 
 		//Pattern for country code
-		boolean checker = Pattern.compile("[+][1-9]{1,3}").matcher(countryCode).matches();
+//		boolean checker = Pattern.compile("[+][1-9]{1,3}").matcher(countryCode).matches();
 
-		if (check && checker) {
+		if (check) {
 			phone = phonenumber;
 			newCode = countryCode;
+			if(phone.startsWith("0")){
+				//Triggering the register page.
+				registerUser(firstName.getText().toString(), lastName.getText().toString(), email.getText().toString(), phone,
+						username.getText().toString(), password.getText().toString(), verify_password.getText().toString(), refID.getText().toString()
+				);
+			}
+			else{
+				Toasty.custom(this, "Phone number must start with 0!", R.drawable.close_24dp, R.color.colorPrimary, Toast.LENGTH_LONG, true, true).show();
 
-			//Triggering the register page.
-			registerUser(firstName.getText().toString(), lastName.getText().toString(), email.getText().toString(), phone.toString(),
-					username.getText().toString(), password.getText().toString(), verify_password.getText().toString(), refID.getText().toString()
-			);
+			}
+
 		} else {
-			Toasty.custom(this, "Country Code or Phone number is wrong!", R.drawable.close_24dp, R.color.colorPrimary, Toast.LENGTH_LONG, true, true).show();
+			Toasty.custom(this, "Phone number is wrong!", R.drawable.close_24dp, R.color.colorPrimary, Toast.LENGTH_LONG, true, true).show();
 		}
 
 	}
@@ -134,7 +140,10 @@ public class Registration extends AppCompatActivity {
 							errorMsg, R.drawable.close_24dp, R.color.colorPrimary, Toast.LENGTH_LONG, true, true).show();
 				}
 			} catch (JSONException e) {
-				e.printStackTrace();
+//				e.printStackTrace();
+				Toasty.custom(getApplicationContext(),
+						"Network Error", R.drawable.close_24dp, R.color.colorPrimary, Toast.LENGTH_LONG, true, true).show();
+
 			}
 
 		}, error -> {

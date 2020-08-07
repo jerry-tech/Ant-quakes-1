@@ -255,7 +255,7 @@
                             android:backgroundTint="@color/background_main"
                             android:fontFamily="@font/capriola"
                             android:inputType="number"
-                            android:maxLength="10"
+                            android:maxLength="11"
                             android:padding="23dp"
                             android:textColor="@color/background_main"
                             android:textColorHint="@color/background_main"
