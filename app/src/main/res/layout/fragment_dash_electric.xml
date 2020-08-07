@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".DashElectric">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,10 +14,10 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="10dp"
             android:background="@color/background_main"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="20dp">
+           >
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -30,7 +29,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
-                    android:fontFamily="cursive"
+                    android:fontFamily="@font/capriola"
                     android:gravity="center"
                     android:text="@string/pay_electricity_bill"
                     android:textColor="@color/blackcolor"
@@ -48,13 +47,10 @@
                     android:background="@drawable/spinner_wallet"
                     android:layout_marginEnd="20dp"
                     android:layout_marginRight="20dp"
-                    android:hint="@string/wallet_amount"
-                    android:textColorHint="@color/blackcolor"
                     android:textSize="16sp"
                     app:hintEnabled="true">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/walletAmountt"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:backgroundTint="@color/blackcolor"
@@ -63,6 +59,7 @@
                         android:drawablePadding="14dp"
                         android:enabled="false"
                         android:focusable="false"
+                        android:fontFamily="@font/capriola"
                         android:inputType="text"
                         android:padding="18dp"
                         android:textColor="@color/blackcolor"
@@ -114,6 +111,7 @@
                         android:drawableStart="@drawable/ic_credit_card_black_24dp"
                         android:drawableLeft="@drawable/ic_credit_card_black_24dp"
                         android:drawablePadding="16dp"
+                        android:fontFamily="@font/capriola"
                         android:inputType="number"
                         android:padding="18dp"
                         android:textColor="@color/blackcolor"
@@ -130,7 +128,6 @@
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="20dp"
                     android:layout_marginRight="20dp"
-                    android:background="@drawable/fundwalletbg"
                     android:hint="@string/meter_name_account_name"
                     android:textColorHint="@color/signUp"
                     android:textSize="16sp"
@@ -143,11 +140,12 @@
                         android:drawableStart="@drawable/person_black"
                         android:drawableLeft="@drawable/person_black"
                         android:drawablePadding="16dp"
+                        android:enabled="false"
+                        android:fontFamily="@font/capriola"
                         android:inputType="phone"
-                        android:padding="16dp"
+                        android:padding="18dp"
                         android:textColor="@color/blackcolor"
                         android:textColorHint="@color/blackcolor"
-                        android:enabled="false"
                         android:textSize="16sp" />
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -181,6 +179,7 @@
                     android:layout_marginRight="20dp"
                     android:layout_marginBottom="30dp"
                     android:background="@drawable/rounded_button"
+                    android:fontFamily="@font/capriola"
                     android:text="@string/pay_now"
                     android:textColor="@color/background_main"
                     android:textSize="16sp" />
@@ -194,6 +193,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center"
             android:layout_marginTop="30dp"
+            android:fontFamily="@font/capriola"
             android:padding="5dp"
             android:text="@string/powered_by_codeweb"
             android:textColor="@color/blackcolor"

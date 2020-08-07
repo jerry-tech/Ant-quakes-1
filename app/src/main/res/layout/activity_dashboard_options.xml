@@ -15,26 +15,28 @@
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/capriola"
             android:gravity="center"
             android:minHeight="?actionBarSize"
             android:padding="@dimen/appbar_padding"
             android:text="@string/dashboard_options"
-            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
             android:textSize="18sp"
-            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+            android:textStyle="bold" />
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="?attr/colorPrimary"
-            app:tabMaxWidth="0dp"
             app:tabGravity="fill"
-            app:tabIndicatorColor="@color/blackcolor"
-            app:tabMinWidth="120dp"
+            app:tabIconTintMode="src_in"
+            app:tabIndicatorColor="@color/background_main"
             app:tabIndicatorFullWidth="true"
-            app:tabMode="scrollable"
-            />
+            app:tabIndicatorHeight="3dp"
+            app:tabMaxWidth="0dp"
+            app:tabMinWidth="120dp"
+            app:tabMode="scrollable" />
 
     </com.google.android.material.appbar.AppBarLayout>
 

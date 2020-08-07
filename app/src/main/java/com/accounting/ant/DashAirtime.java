@@ -144,7 +144,7 @@ public class DashAirtime extends Fragment {
 					}
 
 					//Creating the array adapter class to populate the spinner.
-					ArrayAdapter<String> adapter = new ArrayAdapter<String>(
+					ArrayAdapter<String> adapter = new ArrayAdapter<>(
 							//Getting the activity.
 							root.getContext(),
 							//Getting the UI.

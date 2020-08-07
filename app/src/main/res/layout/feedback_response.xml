@@ -11,8 +11,6 @@ android:layout_height="match_parent"
     android:background="@drawable/cancel_btn"
     android:padding="30dp">
 
-
-
     <TextView
         android:id="@+id/iconsResponse"
         android:layout_width="match_parent"

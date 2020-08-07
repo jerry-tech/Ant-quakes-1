@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/colorAccent">
+    android:background="@color/background_main">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -17,19 +17,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
             android:layout_gravity="center_horizontal"
-            android:layout_margin="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
             android:fontFamily="cursive"
             android:gravity="center_horizontal"
             android:padding="20dp"
             android:text="@string/antquakes"
-            android:textColor="@color/background_main"
+            android:textColor="@color/blackcolor"
             android:textSize="50sp"
-            android:textStyle="bold"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentRight="true" />
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -58,6 +63,8 @@
                 android:layout_height="match_parent"
                 android:background="@color/background_main"
                 android:orientation="vertical"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
                 android:scrollbarAlwaysDrawHorizontalTrack="true"
                 android:scrollbarThumbHorizontal="@style/Widget.AppCompat.Toolbar">
 
@@ -73,19 +80,21 @@
                     android:layout_marginRight="15dp"
                     android:layout_marginTop="50dp"
                     >
+
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/emailAdd"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:backgroundTint="@color/blackcolor"
+                        android:drawableStart="@drawable/person_black"
                         android:drawableLeft="@drawable/person_black"
                         android:drawablePadding="14dp"
+                        android:fontFamily="@font/capriola"
                         android:inputType="text"
-                        android:padding="20dp"
+                        android:padding="18dp"
                         android:textColor="@color/blackcolor"
                         android:textColorHint="@color/blackcolor"
-                        android:textSize="16sp"
-                        android:drawableStart="@drawable/person_black" />
+                        android:textSize="16sp" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -102,7 +111,7 @@
                     android:textColorHint="@color/blackcolor"
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp"
-                    android:layout_marginTop="18dp"
+                    android:layout_marginTop="25dp"
                     >
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -115,7 +124,7 @@
                         android:drawablePadding="14dp"
                         android:fontFamily="@font/capriola"
                         android:inputType="textPassword"
-                        android:padding="20dp"
+                        android:padding="18dp"
                         android:textColor="@color/blackcolor"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -126,10 +135,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
                     android:layout_marginTop="35dp"
+                    android:layout_marginRight="15dp"
                     android:background="@drawable/rounded_button"
+                    android:fontFamily="@font/capriola"
                     android:padding="16dp"
+                    android:textAllCaps="false"
                     android:text="@string/login"
                     android:textColor="@color/background_main"
                     android:textSize="18sp"
@@ -140,40 +151,28 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="end"
+                    android:fontFamily="@font/capriola"
                     android:padding="20dp"
                     android:text="@string/forgot_password"
                     android:textColor="@color/blackcolor"
                     android:textSize="16sp" />
 
                 <TextView
-                    android:onClick="nextRegister"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/capriola"
+                    android:onClick="nextRegister"
                     android:padding="20dp"
                     android:text="@string/don_t_have_an_account"
-                    android:textStyle="bold"
                     android:textColor="@color/blackcolor"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
 
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
-
-        <TextView
-            android:id="@+id/footerTime"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/cardLogin"
-            android:layout_margin="15dp"
-            android:layout_gravity="center_horizontal"
-            android:gravity="center_horizontal"
-            android:padding="20dp"
-            android:textColor="@color/background_main"
-            android:textSize="14sp"
-            android:textStyle="bold"
-            />
 
     </RelativeLayout>
 
